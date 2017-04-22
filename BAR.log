@@ -1,0 +1,147 @@
+2017-04-12 20:00:57; Server connected
+2017-04-12 20:01:11; Connection closed
+2017-04-12 20:02:28; Server connected
+2017-04-12 20:03:00; Connection closed
+2017-04-12 20:03:52; Server connected
+2017-04-12 20:04:00; Connection closed
+2017-04-12 20:04:39; Server connected
+2017-04-12 20:04:40; OnBar error
+2017-04-12 20:04:42; OnBar error
+2017-04-12 20:04:44; OnBar error
+2017-04-12 20:04:46; OnBar error
+2017-04-12 20:04:48; OnBar error
+2017-04-12 20:04:50; OnBar error
+2017-04-12 20:04:52; OnBar error
+2017-04-12 20:04:54; OnBar error
+2017-04-12 20:04:56; OnBar error
+2017-04-12 20:04:58; OnBar error
+2017-04-12 20:05:00; OnBar error
+2017-04-12 20:05:02; OnBar error
+2017-04-12 20:05:04; OnBar error
+2017-04-12 20:05:06; OnBar error
+2017-04-12 20:05:08; OnBar error
+2017-04-12 20:05:10; OnBar error
+2017-04-12 20:05:12; OnBar error
+2017-04-12 20:05:14; OnBar error
+2017-04-12 20:05:16; OnBar error
+2017-04-12 20:05:18; OnBar error
+2017-04-12 20:05:20; OnBar error
+2017-04-12 20:05:22; OnBar error
+2017-04-12 20:05:24; OnBar error
+2017-04-12 20:05:26; OnBar error
+2017-04-12 20:05:28; OnBar error
+2017-04-12 20:05:30; OnBar error
+2017-04-12 20:05:32; OnBar error
+2017-04-12 20:05:34; OnBar error
+2017-04-12 20:05:36; OnBar error
+2017-04-12 20:05:38; OnBar error
+2017-04-12 20:05:40; OnBar error
+2017-04-12 20:05:42; OnBar error
+2017-04-12 20:05:44; OnBar error
+2017-04-12 20:05:46; OnBar error
+2017-04-12 20:05:48; OnBar error
+2017-04-12 20:05:50; OnBar error
+2017-04-12 20:05:52; OnBar error
+2017-04-12 20:05:54; OnBar error
+2017-04-12 20:05:56; OnBar error
+2017-04-12 20:05:58; OnBar error
+2017-04-12 20:06:00; OnBar error
+2017-04-12 20:06:02; OnBar error
+2017-04-12 20:06:03; Connection closed
+2017-04-12 20:09:05; Server connected
+2017-04-12 20:09:34; Connection closed
+2017-04-13 04:12:17; Server connected
+2017-04-13 04:15:12; Connection closed
+2017-04-13 14:28:02; Server connected
+2017-04-13 14:29:23; Connection closed
+2017-04-13 14:46:17; Using EPollPoller
+2017-04-13 14:46:17; Added: {'callback': <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7f7198c59c20>>, 'only': None, 'one_shot': False, 'arguments': None}
+2017-04-13 14:46:17; Added: {'callback': <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7f7198c59bd8>>, 'only': None, 'one_shot': False, 'arguments': None}
+2017-04-13 14:46:17; Added: {'callback': <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7f7198c6ea28>>, 'only': None, 'one_shot': False, 'arguments': None}
+2017-04-13 14:46:17; Added: {'callback': <bound method SelectConnection._on_connection_start of <pika.adapters.select_connection.SelectConnection object at 0x7f7198c642d0>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-13 14:46:17; Connecting to 127.0.0.1:5672
+2017-04-13 14:46:17; Processing 0:Connection.Start
+2017-04-13 14:46:17; Processing use of oneshot callback
+2017-04-13 14:46:17; 0 registered uses left
+2017-04-13 14:46:17; Removing callback #0: {'callback': <bound method SelectConnection._on_connection_start of <pika.adapters.select_connection.SelectConnection object at 0x7f7198c642d0>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+2017-04-13 14:46:17; Calling <bound method SelectConnection._on_connection_start of <pika.adapters.select_connection.SelectConnection object at 0x7f7198c642d0>> for "0:Connection.Start"
+2017-04-13 14:46:17; Added: {'callback': <bound method SelectConnection._on_connection_tune of <pika.adapters.select_connection.SelectConnection object at 0x7f7198c642d0>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-13 14:46:17; Processing 0:Connection.Tune
+2017-04-13 14:46:17; Processing use of oneshot callback
+2017-04-13 14:46:17; 0 registered uses left
+2017-04-13 14:46:17; Removing callback #0: {'callback': <bound method SelectConnection._on_connection_tune of <pika.adapters.select_connection.SelectConnection object at 0x7f7198c642d0>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+2017-04-13 14:46:17; Calling <bound method SelectConnection._on_connection_tune of <pika.adapters.select_connection.SelectConnection object at 0x7f7198c642d0>> for "0:Connection.Tune"
+2017-04-13 14:46:17; Creating a HeartbeatChecker: 60
+2017-04-13 14:46:17; Added: {'callback': <bound method SelectConnection._on_connection_open of <pika.adapters.select_connection.SelectConnection object at 0x7f7198c642d0>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-13 14:46:17; Processing 0:Connection.OpenOk
+2017-04-13 14:46:17; Processing use of oneshot callback
+2017-04-13 14:46:17; 0 registered uses left
+2017-04-13 14:46:17; Removing callback #0: {'callback': <bound method SelectConnection._on_connection_open of <pika.adapters.select_connection.SelectConnection object at 0x7f7198c642d0>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+2017-04-13 14:46:17; Calling <bound method SelectConnection._on_connection_open of <pika.adapters.select_connection.SelectConnection object at 0x7f7198c642d0>> for "0:Connection.OpenOk"
+2017-04-13 14:46:17; Added: {'callback': <bound method SelectConnection._on_connection_closed of <pika.adapters.select_connection.SelectConnection object at 0x7f7198c642d0>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-13 14:46:17; Processing 0:_on_connection_open
+2017-04-13 14:46:17; Calling <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7f7198c59bd8>> for "0:_on_connection_open"
+2017-04-13 14:46:17; Creating channel 1
+2017-04-13 14:46:17; Added: {'callback': <bound method SelectConnection._on_channel_cleanup of <pika.adapters.select_connection.SelectConnection object at 0x7f7198c642d0>>, 'only': <pika.channel.Channel object at 0x7f71a579b4d0>, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-13 14:46:17; Added: {'callback': <bound method Channel._on_getempty of <pika.channel.Channel object at 0x7f71a579b4d0>>, 'only': None, 'one_shot': False, 'arguments': None}
+2017-04-13 14:46:17; Added: {'callback': <bound method Channel._on_cancel of <pika.channel.Channel object at 0x7f71a579b4d0>>, 'only': None, 'one_shot': False, 'arguments': None}
+2017-04-13 14:46:17; Added: {'callback': <bound method Channel._on_flow of <pika.channel.Channel object at 0x7f71a579b4d0>>, 'only': None, 'one_shot': False, 'arguments': None}
+2017-04-13 14:46:17; Added: {'callback': <bound method Channel._on_close of <pika.channel.Channel object at 0x7f71a579b4d0>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-13 14:46:17; Adding in on_synchronous_complete callback
+2017-04-13 14:46:17; Added: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7f71a579b4d0>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-13 14:46:17; Adding passed in callback
+2017-04-13 14:46:17; Added: {'callback': <bound method Channel._on_openok of <pika.channel.Channel object at 0x7f71a579b4d0>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-13 14:46:17; Added: {'callback': <bound method BlockingChannel._on_consumer_cancelled_by_broker of <pika.adapters.blocking_connection.BlockingChannel object at 0x7f71a579b650>>, 'only': None, 'one_shot': False, 'arguments': None}
+2017-04-13 14:46:17; Added: {'callback': <bound method _CallbackResult.signal_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7f71989fa050>>, 'only': None, 'one_shot': False, 'arguments': None}
+2017-04-13 14:46:17; Added: {'callback': <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7f71989fa1b8>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-13 14:46:17; Added: {'callback': <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7f71989fa200>>, 'only': None, 'one_shot': False, 'arguments': None}
+2017-04-13 14:46:17; Created channel=1
+2017-04-13 14:46:17; Processing 1:Channel.OpenOk
+2017-04-13 14:46:17; Processing use of oneshot callback
+2017-04-13 14:46:17; 0 registered uses left
+2017-04-13 14:46:17; Removing callback #0: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7f71a579b4d0>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+2017-04-13 14:46:17; Processing use of oneshot callback
+2017-04-13 14:46:17; 0 registered uses left
+2017-04-13 14:46:17; Removing callback #0: {'callback': <bound method Channel._on_openok of <pika.channel.Channel object at 0x7f71a579b4d0>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+2017-04-13 14:46:17; Calling <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7f71a579b4d0>> for "1:Channel.OpenOk"
+2017-04-13 14:46:17; 0 blocked frames
+2017-04-13 14:46:17; Calling <bound method Channel._on_openok of <pika.channel.Channel object at 0x7f71a579b4d0>> for "1:Channel.OpenOk"
+2017-04-13 14:46:17; Adding in on_synchronous_complete callback
+2017-04-13 14:46:17; Added: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7f71a579b4d0>>, 'only': None, 'one_shot': True, 'arguments': {'queue': 'onBar'}, 'calls': 1}
+2017-04-13 14:46:17; Adding passed in callback
+2017-04-13 14:46:17; Added: {'callback': <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7f71989fa6c8>>, 'only': None, 'one_shot': True, 'arguments': {'queue': 'onBar'}, 'calls': 1}
+2017-04-13 14:46:17; Processing 1:Queue.DeclareOk
+2017-04-13 14:46:17; Processing use of oneshot callback
+2017-04-13 14:46:17; 0 registered uses left
+2017-04-13 14:46:17; Comparing {'queue': 'onBar'} to {'queue': 'onBar'}
+2017-04-13 14:46:17; Removing callback #0: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7f71a579b4d0>>, 'only': None, 'one_shot': True, 'arguments': {'queue': 'onBar'}, 'calls': 0}
+2017-04-13 14:46:17; Processing use of oneshot callback
+2017-04-13 14:46:17; 0 registered uses left
+2017-04-13 14:46:17; Comparing {'queue': 'onBar'} to {'queue': 'onBar'}
+2017-04-13 14:46:17; Removing callback #0: {'callback': <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7f71989fa6c8>>, 'only': None, 'one_shot': True, 'arguments': {'queue': 'onBar'}, 'calls': 0}
+2017-04-13 14:46:17; Calling <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7f71a579b4d0>> for "1:Queue.DeclareOk"
+2017-04-13 14:46:17; 0 blocked frames
+2017-04-13 14:46:17; Calling <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7f71989fa6c8>> for "1:Queue.DeclareOk"
+2017-04-13 14:46:18; Server connected
+2017-04-13 14:47:00; error from callback <function on_message at 0x7f7198c71140>: global name 'channel' is not defined
+2017-04-13 14:48:00; error from callback <function on_message at 0x7f7198c71140>: global name 'channel' is not defined
+2017-04-13 14:49:00; error from callback <function on_message at 0x7f7198c71140>: global name 'channel' is not defined
+2017-04-13 14:49:03; Connection closed
+2017-04-13 14:52:22; Server connected
+2017-04-13 14:53:15; Connection closed
+2017-04-13 20:27:57; Server connected
+2017-04-14 01:48:06; Connection closed
+2017-04-14 20:33:02; Server connected
+2017-04-14 20:53:40; Connection closed
+2017-04-15 02:55:16; Server connected
+2017-04-15 03:05:56; Connection closed
+2017-04-19 16:42:25; Server connected
+2017-04-19 17:09:42; Connection closed
+2017-04-21 15:32:01; Server connected
+2017-04-21 15:33:16; Connection closed
+2017-04-21 15:53:05; Server connected
+2017-04-21 17:10:28; Connection closed
+2017-04-21 17:40:47; Server connected
+2017-04-21 17:51:54; Connection closed
+2017-04-22 15:14:41; Server connected
+2017-04-22 15:25:28; Server connected

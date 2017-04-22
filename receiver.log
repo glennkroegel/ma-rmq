@@ -1,0 +1,950 @@
+2017-04-21 16:22:48; Using EPollPoller
+2017-04-21 16:22:48; Added: {'callback': <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7f96563cbc20>>, 'only': None, 'one_shot': False, 'arguments': None}
+2017-04-21 16:22:48; Added: {'callback': <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7f96563cbbd8>>, 'only': None, 'one_shot': False, 'arguments': None}
+2017-04-21 16:22:48; Added: {'callback': <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7f96563cbc68>>, 'only': None, 'one_shot': False, 'arguments': None}
+2017-04-21 16:22:48; Added: {'callback': <bound method SelectConnection._on_connection_start of <pika.adapters.select_connection.SelectConnection object at 0x7f96563c04d0>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-21 16:22:48; Connecting to 127.0.0.1:5672
+2017-04-21 16:22:48; Processing 0:Connection.Start
+2017-04-21 16:22:48; Processing use of oneshot callback
+2017-04-21 16:22:48; 0 registered uses left
+2017-04-21 16:22:48; Removing callback #0: {'callback': <bound method SelectConnection._on_connection_start of <pika.adapters.select_connection.SelectConnection object at 0x7f96563c04d0>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+2017-04-21 16:22:48; Calling <bound method SelectConnection._on_connection_start of <pika.adapters.select_connection.SelectConnection object at 0x7f96563c04d0>> for "0:Connection.Start"
+2017-04-21 16:22:48; Added: {'callback': <bound method SelectConnection._on_connection_tune of <pika.adapters.select_connection.SelectConnection object at 0x7f96563c04d0>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-21 16:22:48; Processing 0:Connection.Tune
+2017-04-21 16:22:48; Processing use of oneshot callback
+2017-04-21 16:22:48; 0 registered uses left
+2017-04-21 16:22:48; Removing callback #0: {'callback': <bound method SelectConnection._on_connection_tune of <pika.adapters.select_connection.SelectConnection object at 0x7f96563c04d0>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+2017-04-21 16:22:48; Calling <bound method SelectConnection._on_connection_tune of <pika.adapters.select_connection.SelectConnection object at 0x7f96563c04d0>> for "0:Connection.Tune"
+2017-04-21 16:22:48; Creating a HeartbeatChecker: 60
+2017-04-21 16:22:48; Added: {'callback': <bound method SelectConnection._on_connection_open of <pika.adapters.select_connection.SelectConnection object at 0x7f96563c04d0>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-21 16:22:48; Processing 0:Connection.OpenOk
+2017-04-21 16:22:48; Processing use of oneshot callback
+2017-04-21 16:22:48; 0 registered uses left
+2017-04-21 16:22:48; Removing callback #0: {'callback': <bound method SelectConnection._on_connection_open of <pika.adapters.select_connection.SelectConnection object at 0x7f96563c04d0>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+2017-04-21 16:22:48; Calling <bound method SelectConnection._on_connection_open of <pika.adapters.select_connection.SelectConnection object at 0x7f96563c04d0>> for "0:Connection.OpenOk"
+2017-04-21 16:22:48; Added: {'callback': <bound method SelectConnection._on_connection_closed of <pika.adapters.select_connection.SelectConnection object at 0x7f96563c04d0>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-21 16:22:48; Processing 0:_on_connection_open
+2017-04-21 16:22:48; Calling <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7f96563cbbd8>> for "0:_on_connection_open"
+2017-04-21 16:22:48; Creating channel 1
+2017-04-21 16:22:48; Added: {'callback': <bound method SelectConnection._on_channel_cleanup of <pika.adapters.select_connection.SelectConnection object at 0x7f96563c04d0>>, 'only': <pika.channel.Channel object at 0x7f9662efe2d0>, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-21 16:22:48; Added: {'callback': <bound method Channel._on_getempty of <pika.channel.Channel object at 0x7f9662efe2d0>>, 'only': None, 'one_shot': False, 'arguments': None}
+2017-04-21 16:22:48; Added: {'callback': <bound method Channel._on_cancel of <pika.channel.Channel object at 0x7f9662efe2d0>>, 'only': None, 'one_shot': False, 'arguments': None}
+2017-04-21 16:22:48; Added: {'callback': <bound method Channel._on_flow of <pika.channel.Channel object at 0x7f9662efe2d0>>, 'only': None, 'one_shot': False, 'arguments': None}
+2017-04-21 16:22:48; Added: {'callback': <bound method Channel._on_close of <pika.channel.Channel object at 0x7f9662efe2d0>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-21 16:22:48; Adding in on_synchronous_complete callback
+2017-04-21 16:22:48; Added: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7f9662efe2d0>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-21 16:22:48; Adding passed in callback
+2017-04-21 16:22:48; Added: {'callback': <bound method Channel._on_openok of <pika.channel.Channel object at 0x7f9662efe2d0>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-21 16:22:48; Added: {'callback': <bound method BlockingChannel._on_consumer_cancelled_by_broker of <pika.adapters.blocking_connection.BlockingChannel object at 0x7f9662efe450>>, 'only': None, 'one_shot': False, 'arguments': None}
+2017-04-21 16:22:48; Added: {'callback': <bound method _CallbackResult.signal_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7f9656158050>>, 'only': None, 'one_shot': False, 'arguments': None}
+2017-04-21 16:22:48; Added: {'callback': <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7f96561583f8>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-21 16:22:48; Added: {'callback': <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7f9656158440>>, 'only': None, 'one_shot': False, 'arguments': None}
+2017-04-21 16:22:48; Created channel=1
+2017-04-21 16:22:48; Processing 1:Channel.OpenOk
+2017-04-21 16:22:48; Processing use of oneshot callback
+2017-04-21 16:22:48; 0 registered uses left
+2017-04-21 16:22:48; Removing callback #0: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7f9662efe2d0>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+2017-04-21 16:22:48; Processing use of oneshot callback
+2017-04-21 16:22:48; 0 registered uses left
+2017-04-21 16:22:48; Removing callback #0: {'callback': <bound method Channel._on_openok of <pika.channel.Channel object at 0x7f9662efe2d0>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+2017-04-21 16:22:48; Calling <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7f9662efe2d0>> for "1:Channel.OpenOk"
+2017-04-21 16:22:48; 0 blocked frames
+2017-04-21 16:22:48; Calling <bound method Channel._on_openok of <pika.channel.Channel object at 0x7f9662efe2d0>> for "1:Channel.OpenOk"
+2017-04-21 16:22:48; Adding in on_synchronous_complete callback
+2017-04-21 16:22:48; Added: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7f9662efe2d0>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-21 16:22:48; Adding passed in callback
+2017-04-21 16:22:48; Added: {'callback': <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7f9656158908>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-21 16:22:48; Processing 1:Exchange.DeclareOk
+2017-04-21 16:22:48; Processing use of oneshot callback
+2017-04-21 16:22:48; 0 registered uses left
+2017-04-21 16:22:48; Removing callback #0: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7f9662efe2d0>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+2017-04-21 16:22:48; Processing use of oneshot callback
+2017-04-21 16:22:48; 0 registered uses left
+2017-04-21 16:22:48; Removing callback #0: {'callback': <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7f9656158908>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+2017-04-21 16:22:48; Calling <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7f9662efe2d0>> for "1:Exchange.DeclareOk"
+2017-04-21 16:22:48; 0 blocked frames
+2017-04-21 16:22:48; Calling <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7f9656158908>> for "1:Exchange.DeclareOk"
+2017-04-21 16:22:48; Adding in on_synchronous_complete callback
+2017-04-21 16:22:48; Added: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7f9662efe2d0>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-21 16:22:48; Adding passed in callback
+2017-04-21 16:22:48; Added: {'callback': <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7f9656158908>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-21 16:22:48; Processing 1:Queue.DeclareOk
+2017-04-21 16:22:48; Processing use of oneshot callback
+2017-04-21 16:22:48; 0 registered uses left
+2017-04-21 16:22:48; Removing callback #0: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7f9662efe2d0>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+2017-04-21 16:22:48; Processing use of oneshot callback
+2017-04-21 16:22:48; 0 registered uses left
+2017-04-21 16:22:48; Removing callback #0: {'callback': <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7f9656158908>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+2017-04-21 16:22:48; Calling <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7f9662efe2d0>> for "1:Queue.DeclareOk"
+2017-04-21 16:22:48; 0 blocked frames
+2017-04-21 16:22:48; Calling <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7f9656158908>> for "1:Queue.DeclareOk"
+2017-04-21 16:22:48; Adding in on_synchronous_complete callback
+2017-04-21 16:22:48; Added: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7f9662efe2d0>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-21 16:22:48; Adding passed in callback
+2017-04-21 16:22:48; Added: {'callback': <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7f9656158908>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-21 16:22:48; Processing 1:Queue.BindOk
+2017-04-21 16:22:48; Processing use of oneshot callback
+2017-04-21 16:22:48; 0 registered uses left
+2017-04-21 16:22:48; Removing callback #0: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7f9662efe2d0>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+2017-04-21 16:22:48; Processing use of oneshot callback
+2017-04-21 16:22:48; 0 registered uses left
+2017-04-21 16:22:48; Removing callback #0: {'callback': <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7f9656158908>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+2017-04-21 16:22:48; Calling <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7f9662efe2d0>> for "1:Queue.BindOk"
+2017-04-21 16:22:48; 0 blocked frames
+2017-04-21 16:22:48; Calling <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7f9656158908>> for "1:Queue.BindOk"
+2017-04-21 16:22:48; Adding in on_synchronous_complete callback
+2017-04-21 16:22:48; Added: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7f9662efe2d0>>, 'only': None, 'one_shot': True, 'arguments': {'consumer_tag': 'ctag1.35ddce68033e4400be795d36e216ca2a'}, 'calls': 1}
+2017-04-21 16:22:48; Adding passed in callback
+2017-04-21 16:22:48; Added: {'callback': <bound method Channel._on_eventok of <pika.channel.Channel object at 0x7f9662efe2d0>>, 'only': None, 'one_shot': True, 'arguments': {'consumer_tag': 'ctag1.35ddce68033e4400be795d36e216ca2a'}, 'calls': 1}
+2017-04-21 16:22:48; Processing 1:Basic.ConsumeOk
+2017-04-21 16:22:48; Processing use of oneshot callback
+2017-04-21 16:22:48; 0 registered uses left
+2017-04-21 16:22:48; Comparing {'consumer_tag': 'ctag1.35ddce68033e4400be795d36e216ca2a'} to {'consumer_tag': 'ctag1.35ddce68033e4400be795d36e216ca2a'}
+2017-04-21 16:22:48; Removing callback #1: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7f9662efe2d0>>, 'only': None, 'one_shot': True, 'arguments': {'consumer_tag': 'ctag1.35ddce68033e4400be795d36e216ca2a'}, 'calls': 0}
+2017-04-21 16:22:48; Processing use of oneshot callback
+2017-04-21 16:22:48; 0 registered uses left
+2017-04-21 16:22:48; Comparing {'consumer_tag': 'ctag1.35ddce68033e4400be795d36e216ca2a'} to {'consumer_tag': 'ctag1.35ddce68033e4400be795d36e216ca2a'}
+2017-04-21 16:22:48; Removing callback #1: {'callback': <bound method Channel._on_eventok of <pika.channel.Channel object at 0x7f9662efe2d0>>, 'only': None, 'one_shot': True, 'arguments': {'consumer_tag': 'ctag1.35ddce68033e4400be795d36e216ca2a'}, 'calls': 0}
+2017-04-21 16:22:48; Calling <bound method _CallbackResult.signal_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7f9656158050>> for "1:Basic.ConsumeOk"
+2017-04-21 16:22:48; Calling <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7f9662efe2d0>> for "1:Basic.ConsumeOk"
+2017-04-21 16:22:48; 0 blocked frames
+2017-04-21 16:22:48; Calling <bound method Channel._on_eventok of <pika.channel.Channel object at 0x7f9662efe2d0>> for "1:Basic.ConsumeOk"
+2017-04-21 16:22:48; Discarding frame <METHOD(['channel_number=1', 'frame_type=1', "method=<Basic.ConsumeOk(['consumer_tag=ctag1.35ddce68033e4400be795d36e216ca2a'])>"])>
+2017-04-21 16:22:48; Server connected
+2017-04-21 16:23:48; Received heartbeat frame
+2017-04-21 16:23:48; Received 1 heartbeat frames, sent 0
+2017-04-21 16:23:48; Sending heartbeat frame
+2017-04-21 16:24:48; Received 1 heartbeat frames, sent 1
+2017-04-21 16:24:48; Sending heartbeat frame
+2017-04-21 16:24:48; Received heartbeat frame
+2017-04-21 16:24:54; Connection closed
+2017-04-21 16:26:20; Using EPollPoller
+2017-04-21 16:26:20; Added: {'callback': <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7f14c5904c20>>, 'only': None, 'one_shot': False, 'arguments': None}
+2017-04-21 16:26:20; Added: {'callback': <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7f14c5904bd8>>, 'only': None, 'one_shot': False, 'arguments': None}
+2017-04-21 16:26:20; Added: {'callback': <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7f14c5904c68>>, 'only': None, 'one_shot': False, 'arguments': None}
+2017-04-21 16:26:20; Added: {'callback': <bound method SelectConnection._on_connection_start of <pika.adapters.select_connection.SelectConnection object at 0x7f14c58f8490>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-21 16:26:20; Connecting to 127.0.0.1:5672
+2017-04-21 16:26:20; Processing 0:Connection.Start
+2017-04-21 16:26:20; Processing use of oneshot callback
+2017-04-21 16:26:20; 0 registered uses left
+2017-04-21 16:26:20; Removing callback #0: {'callback': <bound method SelectConnection._on_connection_start of <pika.adapters.select_connection.SelectConnection object at 0x7f14c58f8490>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+2017-04-21 16:26:20; Calling <bound method SelectConnection._on_connection_start of <pika.adapters.select_connection.SelectConnection object at 0x7f14c58f8490>> for "0:Connection.Start"
+2017-04-21 16:26:20; Added: {'callback': <bound method SelectConnection._on_connection_tune of <pika.adapters.select_connection.SelectConnection object at 0x7f14c58f8490>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-21 16:26:20; Processing 0:Connection.Tune
+2017-04-21 16:26:20; Processing use of oneshot callback
+2017-04-21 16:26:20; 0 registered uses left
+2017-04-21 16:26:20; Removing callback #0: {'callback': <bound method SelectConnection._on_connection_tune of <pika.adapters.select_connection.SelectConnection object at 0x7f14c58f8490>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+2017-04-21 16:26:20; Calling <bound method SelectConnection._on_connection_tune of <pika.adapters.select_connection.SelectConnection object at 0x7f14c58f8490>> for "0:Connection.Tune"
+2017-04-21 16:26:20; Creating a HeartbeatChecker: 60
+2017-04-21 16:26:20; Added: {'callback': <bound method SelectConnection._on_connection_open of <pika.adapters.select_connection.SelectConnection object at 0x7f14c58f8490>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-21 16:26:20; Processing 0:Connection.OpenOk
+2017-04-21 16:26:20; Processing use of oneshot callback
+2017-04-21 16:26:20; 0 registered uses left
+2017-04-21 16:26:20; Removing callback #0: {'callback': <bound method SelectConnection._on_connection_open of <pika.adapters.select_connection.SelectConnection object at 0x7f14c58f8490>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+2017-04-21 16:26:20; Calling <bound method SelectConnection._on_connection_open of <pika.adapters.select_connection.SelectConnection object at 0x7f14c58f8490>> for "0:Connection.OpenOk"
+2017-04-21 16:26:20; Added: {'callback': <bound method SelectConnection._on_connection_closed of <pika.adapters.select_connection.SelectConnection object at 0x7f14c58f8490>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-21 16:26:20; Processing 0:_on_connection_open
+2017-04-21 16:26:20; Calling <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7f14c5904bd8>> for "0:_on_connection_open"
+2017-04-21 16:26:20; Creating channel 1
+2017-04-21 16:26:20; Added: {'callback': <bound method SelectConnection._on_channel_cleanup of <pika.adapters.select_connection.SelectConnection object at 0x7f14c58f8490>>, 'only': <pika.channel.Channel object at 0x7f14d2437290>, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-21 16:26:20; Added: {'callback': <bound method Channel._on_getempty of <pika.channel.Channel object at 0x7f14d2437290>>, 'only': None, 'one_shot': False, 'arguments': None}
+2017-04-21 16:26:20; Added: {'callback': <bound method Channel._on_cancel of <pika.channel.Channel object at 0x7f14d2437290>>, 'only': None, 'one_shot': False, 'arguments': None}
+2017-04-21 16:26:20; Added: {'callback': <bound method Channel._on_flow of <pika.channel.Channel object at 0x7f14d2437290>>, 'only': None, 'one_shot': False, 'arguments': None}
+2017-04-21 16:26:20; Added: {'callback': <bound method Channel._on_close of <pika.channel.Channel object at 0x7f14d2437290>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-21 16:26:20; Adding in on_synchronous_complete callback
+2017-04-21 16:26:20; Added: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7f14d2437290>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-21 16:26:20; Adding passed in callback
+2017-04-21 16:26:20; Added: {'callback': <bound method Channel._on_openok of <pika.channel.Channel object at 0x7f14d2437290>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-21 16:26:20; Added: {'callback': <bound method BlockingChannel._on_consumer_cancelled_by_broker of <pika.adapters.blocking_connection.BlockingChannel object at 0x7f14d2437410>>, 'only': None, 'one_shot': False, 'arguments': None}
+2017-04-21 16:26:20; Added: {'callback': <bound method _CallbackResult.signal_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7f14c5691050>>, 'only': None, 'one_shot': False, 'arguments': None}
+2017-04-21 16:26:20; Added: {'callback': <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7f14c56913f8>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-21 16:26:20; Added: {'callback': <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7f14c5691440>>, 'only': None, 'one_shot': False, 'arguments': None}
+2017-04-21 16:26:20; Created channel=1
+2017-04-21 16:26:20; Processing 1:Channel.OpenOk
+2017-04-21 16:26:20; Processing use of oneshot callback
+2017-04-21 16:26:20; 0 registered uses left
+2017-04-21 16:26:20; Removing callback #0: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7f14d2437290>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+2017-04-21 16:26:20; Processing use of oneshot callback
+2017-04-21 16:26:20; 0 registered uses left
+2017-04-21 16:26:20; Removing callback #0: {'callback': <bound method Channel._on_openok of <pika.channel.Channel object at 0x7f14d2437290>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+2017-04-21 16:26:20; Calling <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7f14d2437290>> for "1:Channel.OpenOk"
+2017-04-21 16:26:20; 0 blocked frames
+2017-04-21 16:26:20; Calling <bound method Channel._on_openok of <pika.channel.Channel object at 0x7f14d2437290>> for "1:Channel.OpenOk"
+2017-04-21 16:26:20; Adding in on_synchronous_complete callback
+2017-04-21 16:26:20; Added: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7f14d2437290>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-21 16:26:20; Adding passed in callback
+2017-04-21 16:26:20; Added: {'callback': <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7f14c5691908>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-21 16:26:20; Processing 1:Exchange.DeclareOk
+2017-04-21 16:26:20; Processing use of oneshot callback
+2017-04-21 16:26:20; 0 registered uses left
+2017-04-21 16:26:20; Removing callback #0: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7f14d2437290>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+2017-04-21 16:26:20; Processing use of oneshot callback
+2017-04-21 16:26:20; 0 registered uses left
+2017-04-21 16:26:20; Removing callback #0: {'callback': <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7f14c5691908>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+2017-04-21 16:26:20; Calling <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7f14d2437290>> for "1:Exchange.DeclareOk"
+2017-04-21 16:26:20; 0 blocked frames
+2017-04-21 16:26:20; Calling <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7f14c5691908>> for "1:Exchange.DeclareOk"
+2017-04-21 16:26:20; Adding in on_synchronous_complete callback
+2017-04-21 16:26:20; Added: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7f14d2437290>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-21 16:26:20; Adding passed in callback
+2017-04-21 16:26:20; Added: {'callback': <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7f14c5691908>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-21 16:26:20; Processing 1:Queue.DeclareOk
+2017-04-21 16:26:20; Processing use of oneshot callback
+2017-04-21 16:26:20; 0 registered uses left
+2017-04-21 16:26:20; Removing callback #0: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7f14d2437290>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+2017-04-21 16:26:20; Processing use of oneshot callback
+2017-04-21 16:26:20; 0 registered uses left
+2017-04-21 16:26:20; Removing callback #0: {'callback': <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7f14c5691908>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+2017-04-21 16:26:20; Calling <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7f14d2437290>> for "1:Queue.DeclareOk"
+2017-04-21 16:26:20; 0 blocked frames
+2017-04-21 16:26:20; Calling <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7f14c5691908>> for "1:Queue.DeclareOk"
+2017-04-21 16:26:20; Adding in on_synchronous_complete callback
+2017-04-21 16:26:20; Added: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7f14d2437290>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-21 16:26:20; Adding passed in callback
+2017-04-21 16:26:20; Added: {'callback': <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7f14c5691908>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-21 16:26:20; Processing 1:Queue.BindOk
+2017-04-21 16:26:20; Processing use of oneshot callback
+2017-04-21 16:26:20; 0 registered uses left
+2017-04-21 16:26:20; Removing callback #0: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7f14d2437290>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+2017-04-21 16:26:20; Processing use of oneshot callback
+2017-04-21 16:26:20; 0 registered uses left
+2017-04-21 16:26:20; Removing callback #0: {'callback': <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7f14c5691908>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+2017-04-21 16:26:20; Calling <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7f14d2437290>> for "1:Queue.BindOk"
+2017-04-21 16:26:20; 0 blocked frames
+2017-04-21 16:26:20; Calling <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7f14c5691908>> for "1:Queue.BindOk"
+2017-04-21 16:26:20; Adding in on_synchronous_complete callback
+2017-04-21 16:26:20; Added: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7f14d2437290>>, 'only': None, 'one_shot': True, 'arguments': {'consumer_tag': 'ctag1.0adae50c7dd448f89cf270230a8f4eb2'}, 'calls': 1}
+2017-04-21 16:26:20; Adding passed in callback
+2017-04-21 16:26:20; Added: {'callback': <bound method Channel._on_eventok of <pika.channel.Channel object at 0x7f14d2437290>>, 'only': None, 'one_shot': True, 'arguments': {'consumer_tag': 'ctag1.0adae50c7dd448f89cf270230a8f4eb2'}, 'calls': 1}
+2017-04-21 16:26:20; Processing 1:Basic.ConsumeOk
+2017-04-21 16:26:20; Processing use of oneshot callback
+2017-04-21 16:26:20; 0 registered uses left
+2017-04-21 16:26:20; Comparing {'consumer_tag': 'ctag1.0adae50c7dd448f89cf270230a8f4eb2'} to {'consumer_tag': 'ctag1.0adae50c7dd448f89cf270230a8f4eb2'}
+2017-04-21 16:26:20; Removing callback #1: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7f14d2437290>>, 'only': None, 'one_shot': True, 'arguments': {'consumer_tag': 'ctag1.0adae50c7dd448f89cf270230a8f4eb2'}, 'calls': 0}
+2017-04-21 16:26:20; Processing use of oneshot callback
+2017-04-21 16:26:20; 0 registered uses left
+2017-04-21 16:26:20; Comparing {'consumer_tag': 'ctag1.0adae50c7dd448f89cf270230a8f4eb2'} to {'consumer_tag': 'ctag1.0adae50c7dd448f89cf270230a8f4eb2'}
+2017-04-21 16:26:20; Removing callback #1: {'callback': <bound method Channel._on_eventok of <pika.channel.Channel object at 0x7f14d2437290>>, 'only': None, 'one_shot': True, 'arguments': {'consumer_tag': 'ctag1.0adae50c7dd448f89cf270230a8f4eb2'}, 'calls': 0}
+2017-04-21 16:26:20; Calling <bound method _CallbackResult.signal_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7f14c5691050>> for "1:Basic.ConsumeOk"
+2017-04-21 16:26:20; Calling <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7f14d2437290>> for "1:Basic.ConsumeOk"
+2017-04-21 16:26:20; 0 blocked frames
+2017-04-21 16:26:20; Calling <bound method Channel._on_eventok of <pika.channel.Channel object at 0x7f14d2437290>> for "1:Basic.ConsumeOk"
+2017-04-21 16:26:20; Discarding frame <METHOD(['channel_number=1', 'frame_type=1', "method=<Basic.ConsumeOk(['consumer_tag=ctag1.0adae50c7dd448f89cf270230a8f4eb2'])>"])>
+2017-04-21 16:26:21; Server connected
+2017-04-21 16:27:07; Connection closed
+2017-04-21 16:39:15; Using EPollPoller
+2017-04-21 16:39:15; Added: {'callback': <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7fb278accbd8>>, 'only': None, 'one_shot': False, 'arguments': None}
+2017-04-21 16:39:15; Added: {'callback': <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7fb278accb90>>, 'only': None, 'one_shot': False, 'arguments': None}
+2017-04-21 16:39:15; Added: {'callback': <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7fb278accc20>>, 'only': None, 'one_shot': False, 'arguments': None}
+2017-04-21 16:39:15; Added: {'callback': <bound method SelectConnection._on_connection_start of <pika.adapters.select_connection.SelectConnection object at 0x7fb278ac1490>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-21 16:39:15; Connecting to 127.0.0.1:5672
+2017-04-21 16:39:15; Processing 0:Connection.Start
+2017-04-21 16:39:15; Processing use of oneshot callback
+2017-04-21 16:39:15; 0 registered uses left
+2017-04-21 16:39:15; Removing callback #0: {'callback': <bound method SelectConnection._on_connection_start of <pika.adapters.select_connection.SelectConnection object at 0x7fb278ac1490>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+2017-04-21 16:39:15; Calling <bound method SelectConnection._on_connection_start of <pika.adapters.select_connection.SelectConnection object at 0x7fb278ac1490>> for "0:Connection.Start"
+2017-04-21 16:39:15; Added: {'callback': <bound method SelectConnection._on_connection_tune of <pika.adapters.select_connection.SelectConnection object at 0x7fb278ac1490>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-21 16:39:15; Processing 0:Connection.Tune
+2017-04-21 16:39:15; Processing use of oneshot callback
+2017-04-21 16:39:15; 0 registered uses left
+2017-04-21 16:39:15; Removing callback #0: {'callback': <bound method SelectConnection._on_connection_tune of <pika.adapters.select_connection.SelectConnection object at 0x7fb278ac1490>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+2017-04-21 16:39:15; Calling <bound method SelectConnection._on_connection_tune of <pika.adapters.select_connection.SelectConnection object at 0x7fb278ac1490>> for "0:Connection.Tune"
+2017-04-21 16:39:15; Creating a HeartbeatChecker: 60
+2017-04-21 16:39:15; Added: {'callback': <bound method SelectConnection._on_connection_open of <pika.adapters.select_connection.SelectConnection object at 0x7fb278ac1490>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-21 16:39:15; Processing 0:Connection.OpenOk
+2017-04-21 16:39:15; Processing use of oneshot callback
+2017-04-21 16:39:15; 0 registered uses left
+2017-04-21 16:39:15; Removing callback #0: {'callback': <bound method SelectConnection._on_connection_open of <pika.adapters.select_connection.SelectConnection object at 0x7fb278ac1490>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+2017-04-21 16:39:15; Calling <bound method SelectConnection._on_connection_open of <pika.adapters.select_connection.SelectConnection object at 0x7fb278ac1490>> for "0:Connection.OpenOk"
+2017-04-21 16:39:15; Added: {'callback': <bound method SelectConnection._on_connection_closed of <pika.adapters.select_connection.SelectConnection object at 0x7fb278ac1490>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-21 16:39:15; Processing 0:_on_connection_open
+2017-04-21 16:39:15; Calling <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7fb278accb90>> for "0:_on_connection_open"
+2017-04-21 16:39:15; Creating channel 1
+2017-04-21 16:39:15; Added: {'callback': <bound method SelectConnection._on_channel_cleanup of <pika.adapters.select_connection.SelectConnection object at 0x7fb278ac1490>>, 'only': <pika.channel.Channel object at 0x7fb2855ff290>, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-21 16:39:15; Added: {'callback': <bound method Channel._on_getempty of <pika.channel.Channel object at 0x7fb2855ff290>>, 'only': None, 'one_shot': False, 'arguments': None}
+2017-04-21 16:39:15; Added: {'callback': <bound method Channel._on_cancel of <pika.channel.Channel object at 0x7fb2855ff290>>, 'only': None, 'one_shot': False, 'arguments': None}
+2017-04-21 16:39:15; Added: {'callback': <bound method Channel._on_flow of <pika.channel.Channel object at 0x7fb2855ff290>>, 'only': None, 'one_shot': False, 'arguments': None}
+2017-04-21 16:39:15; Added: {'callback': <bound method Channel._on_close of <pika.channel.Channel object at 0x7fb2855ff290>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-21 16:39:15; Adding in on_synchronous_complete callback
+2017-04-21 16:39:15; Added: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7fb2855ff290>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-21 16:39:15; Adding passed in callback
+2017-04-21 16:39:15; Added: {'callback': <bound method Channel._on_openok of <pika.channel.Channel object at 0x7fb2855ff290>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-21 16:39:15; Added: {'callback': <bound method BlockingChannel._on_consumer_cancelled_by_broker of <pika.adapters.blocking_connection.BlockingChannel object at 0x7fb2855ff410>>, 'only': None, 'one_shot': False, 'arguments': None}
+2017-04-21 16:39:15; Added: {'callback': <bound method _CallbackResult.signal_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7fb278859098>>, 'only': None, 'one_shot': False, 'arguments': None}
+2017-04-21 16:39:15; Added: {'callback': <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7fb2788593b0>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-21 16:39:15; Added: {'callback': <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7fb2788593f8>>, 'only': None, 'one_shot': False, 'arguments': None}
+2017-04-21 16:39:15; Created channel=1
+2017-04-21 16:39:15; Processing 1:Channel.OpenOk
+2017-04-21 16:39:15; Processing use of oneshot callback
+2017-04-21 16:39:15; 0 registered uses left
+2017-04-21 16:39:15; Removing callback #0: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7fb2855ff290>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+2017-04-21 16:39:15; Processing use of oneshot callback
+2017-04-21 16:39:15; 0 registered uses left
+2017-04-21 16:39:15; Removing callback #0: {'callback': <bound method Channel._on_openok of <pika.channel.Channel object at 0x7fb2855ff290>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+2017-04-21 16:39:15; Calling <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7fb2855ff290>> for "1:Channel.OpenOk"
+2017-04-21 16:39:15; 0 blocked frames
+2017-04-21 16:39:15; Calling <bound method Channel._on_openok of <pika.channel.Channel object at 0x7fb2855ff290>> for "1:Channel.OpenOk"
+2017-04-21 16:39:15; Adding in on_synchronous_complete callback
+2017-04-21 16:39:15; Added: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7fb2855ff290>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-21 16:39:15; Adding passed in callback
+2017-04-21 16:39:15; Added: {'callback': <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7fb2788598c0>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-21 16:39:15; Processing 1:Exchange.DeclareOk
+2017-04-21 16:39:15; Processing use of oneshot callback
+2017-04-21 16:39:15; 0 registered uses left
+2017-04-21 16:39:15; Removing callback #0: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7fb2855ff290>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+2017-04-21 16:39:15; Processing use of oneshot callback
+2017-04-21 16:39:15; 0 registered uses left
+2017-04-21 16:39:15; Removing callback #0: {'callback': <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7fb2788598c0>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+2017-04-21 16:39:15; Calling <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7fb2855ff290>> for "1:Exchange.DeclareOk"
+2017-04-21 16:39:15; 0 blocked frames
+2017-04-21 16:39:15; Calling <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7fb2788598c0>> for "1:Exchange.DeclareOk"
+2017-04-21 16:39:15; Adding in on_synchronous_complete callback
+2017-04-21 16:39:15; Added: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7fb2855ff290>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-21 16:39:15; Adding passed in callback
+2017-04-21 16:39:15; Added: {'callback': <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7fb2788598c0>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-21 16:39:15; Processing 1:Queue.DeclareOk
+2017-04-21 16:39:15; Processing use of oneshot callback
+2017-04-21 16:39:15; 0 registered uses left
+2017-04-21 16:39:15; Removing callback #0: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7fb2855ff290>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+2017-04-21 16:39:15; Processing use of oneshot callback
+2017-04-21 16:39:15; 0 registered uses left
+2017-04-21 16:39:15; Removing callback #0: {'callback': <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7fb2788598c0>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+2017-04-21 16:39:15; Calling <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7fb2855ff290>> for "1:Queue.DeclareOk"
+2017-04-21 16:39:15; 0 blocked frames
+2017-04-21 16:39:15; Calling <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7fb2788598c0>> for "1:Queue.DeclareOk"
+2017-04-21 16:39:15; Adding in on_synchronous_complete callback
+2017-04-21 16:39:15; Added: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7fb2855ff290>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-21 16:39:15; Adding passed in callback
+2017-04-21 16:39:15; Added: {'callback': <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7fb2788598c0>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-21 16:39:15; Processing 1:Queue.BindOk
+2017-04-21 16:39:15; Processing use of oneshot callback
+2017-04-21 16:39:15; 0 registered uses left
+2017-04-21 16:39:15; Removing callback #0: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7fb2855ff290>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+2017-04-21 16:39:15; Processing use of oneshot callback
+2017-04-21 16:39:15; 0 registered uses left
+2017-04-21 16:39:15; Removing callback #0: {'callback': <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7fb2788598c0>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+2017-04-21 16:39:15; Calling <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7fb2855ff290>> for "1:Queue.BindOk"
+2017-04-21 16:39:15; 0 blocked frames
+2017-04-21 16:39:15; Calling <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7fb2788598c0>> for "1:Queue.BindOk"
+2017-04-21 16:39:15; Adding in on_synchronous_complete callback
+2017-04-21 16:39:15; Added: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7fb2855ff290>>, 'only': None, 'one_shot': True, 'arguments': {'consumer_tag': 'ctag1.68cc0dd4a52a48fabc2b2cdad154a7c6'}, 'calls': 1}
+2017-04-21 16:39:15; Adding passed in callback
+2017-04-21 16:39:15; Added: {'callback': <bound method Channel._on_eventok of <pika.channel.Channel object at 0x7fb2855ff290>>, 'only': None, 'one_shot': True, 'arguments': {'consumer_tag': 'ctag1.68cc0dd4a52a48fabc2b2cdad154a7c6'}, 'calls': 1}
+2017-04-21 16:39:15; Processing 1:Basic.ConsumeOk
+2017-04-21 16:39:15; Processing use of oneshot callback
+2017-04-21 16:39:15; 0 registered uses left
+2017-04-21 16:39:15; Comparing {'consumer_tag': 'ctag1.68cc0dd4a52a48fabc2b2cdad154a7c6'} to {'consumer_tag': 'ctag1.68cc0dd4a52a48fabc2b2cdad154a7c6'}
+2017-04-21 16:39:15; Removing callback #1: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7fb2855ff290>>, 'only': None, 'one_shot': True, 'arguments': {'consumer_tag': 'ctag1.68cc0dd4a52a48fabc2b2cdad154a7c6'}, 'calls': 0}
+2017-04-21 16:39:15; Processing use of oneshot callback
+2017-04-21 16:39:15; 0 registered uses left
+2017-04-21 16:39:15; Comparing {'consumer_tag': 'ctag1.68cc0dd4a52a48fabc2b2cdad154a7c6'} to {'consumer_tag': 'ctag1.68cc0dd4a52a48fabc2b2cdad154a7c6'}
+2017-04-21 16:39:15; Removing callback #1: {'callback': <bound method Channel._on_eventok of <pika.channel.Channel object at 0x7fb2855ff290>>, 'only': None, 'one_shot': True, 'arguments': {'consumer_tag': 'ctag1.68cc0dd4a52a48fabc2b2cdad154a7c6'}, 'calls': 0}
+2017-04-21 16:39:15; Calling <bound method _CallbackResult.signal_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7fb278859098>> for "1:Basic.ConsumeOk"
+2017-04-21 16:39:15; Calling <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7fb2855ff290>> for "1:Basic.ConsumeOk"
+2017-04-21 16:39:15; 0 blocked frames
+2017-04-21 16:39:15; Calling <bound method Channel._on_eventok of <pika.channel.Channel object at 0x7fb2855ff290>> for "1:Basic.ConsumeOk"
+2017-04-21 16:39:15; Discarding frame <METHOD(['channel_number=1', 'frame_type=1', "method=<Basic.ConsumeOk(['consumer_tag=ctag1.68cc0dd4a52a48fabc2b2cdad154a7c6'])>"])>
+2017-04-21 16:39:16; Server connected
+2017-04-21 16:40:12; Connection closed
+2017-04-21 17:04:05; Using EPollPoller
+2017-04-21 17:04:05; Added: {'callback': <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7fcd35e43cf8>>, 'only': None, 'one_shot': False, 'arguments': None}
+2017-04-21 17:04:05; Added: {'callback': <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7fcd35e43cb0>>, 'only': None, 'one_shot': False, 'arguments': None}
+2017-04-21 17:04:05; Added: {'callback': <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7fcd35e43d40>>, 'only': None, 'one_shot': False, 'arguments': None}
+2017-04-21 17:04:05; Added: {'callback': <bound method SelectConnection._on_connection_start of <pika.adapters.select_connection.SelectConnection object at 0x7fcd35e3a590>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-21 17:04:05; Connecting to 127.0.0.1:5672
+2017-04-21 17:04:05; Processing 0:Connection.Start
+2017-04-21 17:04:05; Processing use of oneshot callback
+2017-04-21 17:04:05; 0 registered uses left
+2017-04-21 17:04:05; Removing callback #0: {'callback': <bound method SelectConnection._on_connection_start of <pika.adapters.select_connection.SelectConnection object at 0x7fcd35e3a590>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+2017-04-21 17:04:05; Calling <bound method SelectConnection._on_connection_start of <pika.adapters.select_connection.SelectConnection object at 0x7fcd35e3a590>> for "0:Connection.Start"
+2017-04-21 17:04:05; Added: {'callback': <bound method SelectConnection._on_connection_tune of <pika.adapters.select_connection.SelectConnection object at 0x7fcd35e3a590>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-21 17:04:05; Processing 0:Connection.Tune
+2017-04-21 17:04:05; Processing use of oneshot callback
+2017-04-21 17:04:05; 0 registered uses left
+2017-04-21 17:04:05; Removing callback #0: {'callback': <bound method SelectConnection._on_connection_tune of <pika.adapters.select_connection.SelectConnection object at 0x7fcd35e3a590>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+2017-04-21 17:04:05; Calling <bound method SelectConnection._on_connection_tune of <pika.adapters.select_connection.SelectConnection object at 0x7fcd35e3a590>> for "0:Connection.Tune"
+2017-04-21 17:04:05; Creating a HeartbeatChecker: 60
+2017-04-21 17:04:05; Added: {'callback': <bound method SelectConnection._on_connection_open of <pika.adapters.select_connection.SelectConnection object at 0x7fcd35e3a590>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-21 17:04:05; Processing 0:Connection.OpenOk
+2017-04-21 17:04:05; Processing use of oneshot callback
+2017-04-21 17:04:05; 0 registered uses left
+2017-04-21 17:04:05; Removing callback #0: {'callback': <bound method SelectConnection._on_connection_open of <pika.adapters.select_connection.SelectConnection object at 0x7fcd35e3a590>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+2017-04-21 17:04:05; Calling <bound method SelectConnection._on_connection_open of <pika.adapters.select_connection.SelectConnection object at 0x7fcd35e3a590>> for "0:Connection.OpenOk"
+2017-04-21 17:04:05; Added: {'callback': <bound method SelectConnection._on_connection_closed of <pika.adapters.select_connection.SelectConnection object at 0x7fcd35e3a590>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-21 17:04:05; Processing 0:_on_connection_open
+2017-04-21 17:04:05; Calling <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7fcd35e43cb0>> for "0:_on_connection_open"
+2017-04-21 17:04:05; Creating channel 1
+2017-04-21 17:04:05; Added: {'callback': <bound method SelectConnection._on_channel_cleanup of <pika.adapters.select_connection.SelectConnection object at 0x7fcd35e3a590>>, 'only': <pika.channel.Channel object at 0x7fcd429772d0>, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-21 17:04:05; Added: {'callback': <bound method Channel._on_getempty of <pika.channel.Channel object at 0x7fcd429772d0>>, 'only': None, 'one_shot': False, 'arguments': None}
+2017-04-21 17:04:05; Added: {'callback': <bound method Channel._on_cancel of <pika.channel.Channel object at 0x7fcd429772d0>>, 'only': None, 'one_shot': False, 'arguments': None}
+2017-04-21 17:04:05; Added: {'callback': <bound method Channel._on_flow of <pika.channel.Channel object at 0x7fcd429772d0>>, 'only': None, 'one_shot': False, 'arguments': None}
+2017-04-21 17:04:05; Added: {'callback': <bound method Channel._on_close of <pika.channel.Channel object at 0x7fcd429772d0>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-21 17:04:05; Adding in on_synchronous_complete callback
+2017-04-21 17:04:05; Added: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7fcd429772d0>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-21 17:04:05; Adding passed in callback
+2017-04-21 17:04:05; Added: {'callback': <bound method Channel._on_openok of <pika.channel.Channel object at 0x7fcd429772d0>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-21 17:04:05; Added: {'callback': <bound method BlockingChannel._on_consumer_cancelled_by_broker of <pika.adapters.blocking_connection.BlockingChannel object at 0x7fcd42977450>>, 'only': None, 'one_shot': False, 'arguments': None}
+2017-04-21 17:04:05; Added: {'callback': <bound method _CallbackResult.signal_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7fcd35bcf0e0>>, 'only': None, 'one_shot': False, 'arguments': None}
+2017-04-21 17:04:05; Added: {'callback': <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7fcd35bcf4d0>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-21 17:04:05; Added: {'callback': <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7fcd35bcf518>>, 'only': None, 'one_shot': False, 'arguments': None}
+2017-04-21 17:04:05; Created channel=1
+2017-04-21 17:04:05; Processing 1:Channel.OpenOk
+2017-04-21 17:04:05; Processing use of oneshot callback
+2017-04-21 17:04:05; 0 registered uses left
+2017-04-21 17:04:05; Removing callback #0: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7fcd429772d0>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+2017-04-21 17:04:05; Processing use of oneshot callback
+2017-04-21 17:04:05; 0 registered uses left
+2017-04-21 17:04:05; Removing callback #0: {'callback': <bound method Channel._on_openok of <pika.channel.Channel object at 0x7fcd429772d0>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+2017-04-21 17:04:05; Calling <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7fcd429772d0>> for "1:Channel.OpenOk"
+2017-04-21 17:04:05; 0 blocked frames
+2017-04-21 17:04:05; Calling <bound method Channel._on_openok of <pika.channel.Channel object at 0x7fcd429772d0>> for "1:Channel.OpenOk"
+2017-04-21 17:04:05; Adding in on_synchronous_complete callback
+2017-04-21 17:04:05; Added: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7fcd429772d0>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-21 17:04:05; Adding passed in callback
+2017-04-21 17:04:05; Added: {'callback': <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7fcd35bcf9e0>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-21 17:04:05; Processing 1:Exchange.DeclareOk
+2017-04-21 17:04:05; Processing use of oneshot callback
+2017-04-21 17:04:05; 0 registered uses left
+2017-04-21 17:04:05; Removing callback #0: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7fcd429772d0>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+2017-04-21 17:04:05; Processing use of oneshot callback
+2017-04-21 17:04:05; 0 registered uses left
+2017-04-21 17:04:05; Removing callback #0: {'callback': <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7fcd35bcf9e0>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+2017-04-21 17:04:05; Calling <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7fcd429772d0>> for "1:Exchange.DeclareOk"
+2017-04-21 17:04:05; 0 blocked frames
+2017-04-21 17:04:05; Calling <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7fcd35bcf9e0>> for "1:Exchange.DeclareOk"
+2017-04-21 17:04:05; Adding in on_synchronous_complete callback
+2017-04-21 17:04:05; Added: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7fcd429772d0>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-21 17:04:05; Adding passed in callback
+2017-04-21 17:04:05; Added: {'callback': <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7fcd35bcf9e0>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-21 17:04:05; Processing 1:Queue.DeclareOk
+2017-04-21 17:04:05; Processing use of oneshot callback
+2017-04-21 17:04:05; 0 registered uses left
+2017-04-21 17:04:05; Removing callback #0: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7fcd429772d0>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+2017-04-21 17:04:05; Processing use of oneshot callback
+2017-04-21 17:04:05; 0 registered uses left
+2017-04-21 17:04:05; Removing callback #0: {'callback': <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7fcd35bcf9e0>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+2017-04-21 17:04:05; Calling <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7fcd429772d0>> for "1:Queue.DeclareOk"
+2017-04-21 17:04:05; 0 blocked frames
+2017-04-21 17:04:05; Calling <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7fcd35bcf9e0>> for "1:Queue.DeclareOk"
+2017-04-21 17:04:05; Adding in on_synchronous_complete callback
+2017-04-21 17:04:05; Added: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7fcd429772d0>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-21 17:04:05; Adding passed in callback
+2017-04-21 17:04:05; Added: {'callback': <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7fcd35bcf9e0>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-21 17:04:05; Processing 1:Queue.BindOk
+2017-04-21 17:04:05; Processing use of oneshot callback
+2017-04-21 17:04:05; 0 registered uses left
+2017-04-21 17:04:05; Removing callback #0: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7fcd429772d0>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+2017-04-21 17:04:05; Processing use of oneshot callback
+2017-04-21 17:04:05; 0 registered uses left
+2017-04-21 17:04:05; Removing callback #0: {'callback': <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7fcd35bcf9e0>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+2017-04-21 17:04:05; Calling <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7fcd429772d0>> for "1:Queue.BindOk"
+2017-04-21 17:04:05; 0 blocked frames
+2017-04-21 17:04:05; Calling <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7fcd35bcf9e0>> for "1:Queue.BindOk"
+2017-04-21 17:04:05; Adding in on_synchronous_complete callback
+2017-04-21 17:04:05; Added: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7fcd429772d0>>, 'only': None, 'one_shot': True, 'arguments': {'consumer_tag': 'ctag1.29a16fc270354e64a48c21563ab52b9a'}, 'calls': 1}
+2017-04-21 17:04:05; Adding passed in callback
+2017-04-21 17:04:05; Added: {'callback': <bound method Channel._on_eventok of <pika.channel.Channel object at 0x7fcd429772d0>>, 'only': None, 'one_shot': True, 'arguments': {'consumer_tag': 'ctag1.29a16fc270354e64a48c21563ab52b9a'}, 'calls': 1}
+2017-04-21 17:04:05; Processing 1:Basic.ConsumeOk
+2017-04-21 17:04:05; Processing use of oneshot callback
+2017-04-21 17:04:05; 0 registered uses left
+2017-04-21 17:04:05; Comparing {'consumer_tag': 'ctag1.29a16fc270354e64a48c21563ab52b9a'} to {'consumer_tag': 'ctag1.29a16fc270354e64a48c21563ab52b9a'}
+2017-04-21 17:04:05; Removing callback #1: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7fcd429772d0>>, 'only': None, 'one_shot': True, 'arguments': {'consumer_tag': 'ctag1.29a16fc270354e64a48c21563ab52b9a'}, 'calls': 0}
+2017-04-21 17:04:05; Processing use of oneshot callback
+2017-04-21 17:04:05; 0 registered uses left
+2017-04-21 17:04:05; Comparing {'consumer_tag': 'ctag1.29a16fc270354e64a48c21563ab52b9a'} to {'consumer_tag': 'ctag1.29a16fc270354e64a48c21563ab52b9a'}
+2017-04-21 17:04:05; Removing callback #1: {'callback': <bound method Channel._on_eventok of <pika.channel.Channel object at 0x7fcd429772d0>>, 'only': None, 'one_shot': True, 'arguments': {'consumer_tag': 'ctag1.29a16fc270354e64a48c21563ab52b9a'}, 'calls': 0}
+2017-04-21 17:04:05; Calling <bound method _CallbackResult.signal_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7fcd35bcf0e0>> for "1:Basic.ConsumeOk"
+2017-04-21 17:04:05; Calling <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7fcd429772d0>> for "1:Basic.ConsumeOk"
+2017-04-21 17:04:05; 0 blocked frames
+2017-04-21 17:04:05; Calling <bound method Channel._on_eventok of <pika.channel.Channel object at 0x7fcd429772d0>> for "1:Basic.ConsumeOk"
+2017-04-21 17:04:05; Discarding frame <METHOD(['channel_number=1', 'frame_type=1', "method=<Basic.ConsumeOk(['consumer_tag=ctag1.29a16fc270354e64a48c21563ab52b9a'])>"])>
+2017-04-21 17:42:02; Using EPollPoller
+2017-04-21 17:42:02; Added: {'callback': <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7fa9dc0e7cf8>>, 'only': None, 'one_shot': False, 'arguments': None}
+2017-04-21 17:42:02; Added: {'callback': <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7fa9dc0e7cb0>>, 'only': None, 'one_shot': False, 'arguments': None}
+2017-04-21 17:42:02; Added: {'callback': <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7fa9dc0e7d40>>, 'only': None, 'one_shot': False, 'arguments': None}
+2017-04-21 17:42:02; Added: {'callback': <bound method SelectConnection._on_connection_start of <pika.adapters.select_connection.SelectConnection object at 0x7fa9dc0de590>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-21 17:42:02; Connecting to 127.0.0.1:5672
+2017-04-21 17:42:02; Processing 0:Connection.Start
+2017-04-21 17:42:02; Processing use of oneshot callback
+2017-04-21 17:42:02; 0 registered uses left
+2017-04-21 17:42:02; Removing callback #0: {'callback': <bound method SelectConnection._on_connection_start of <pika.adapters.select_connection.SelectConnection object at 0x7fa9dc0de590>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+2017-04-21 17:42:02; Calling <bound method SelectConnection._on_connection_start of <pika.adapters.select_connection.SelectConnection object at 0x7fa9dc0de590>> for "0:Connection.Start"
+2017-04-21 17:42:02; Added: {'callback': <bound method SelectConnection._on_connection_tune of <pika.adapters.select_connection.SelectConnection object at 0x7fa9dc0de590>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-21 17:42:02; Processing 0:Connection.Tune
+2017-04-21 17:42:02; Processing use of oneshot callback
+2017-04-21 17:42:02; 0 registered uses left
+2017-04-21 17:42:02; Removing callback #0: {'callback': <bound method SelectConnection._on_connection_tune of <pika.adapters.select_connection.SelectConnection object at 0x7fa9dc0de590>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+2017-04-21 17:42:02; Calling <bound method SelectConnection._on_connection_tune of <pika.adapters.select_connection.SelectConnection object at 0x7fa9dc0de590>> for "0:Connection.Tune"
+2017-04-21 17:42:02; Creating a HeartbeatChecker: 60
+2017-04-21 17:42:02; Added: {'callback': <bound method SelectConnection._on_connection_open of <pika.adapters.select_connection.SelectConnection object at 0x7fa9dc0de590>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-21 17:42:02; Processing 0:Connection.OpenOk
+2017-04-21 17:42:02; Processing use of oneshot callback
+2017-04-21 17:42:02; 0 registered uses left
+2017-04-21 17:42:02; Removing callback #0: {'callback': <bound method SelectConnection._on_connection_open of <pika.adapters.select_connection.SelectConnection object at 0x7fa9dc0de590>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+2017-04-21 17:42:02; Calling <bound method SelectConnection._on_connection_open of <pika.adapters.select_connection.SelectConnection object at 0x7fa9dc0de590>> for "0:Connection.OpenOk"
+2017-04-21 17:42:02; Added: {'callback': <bound method SelectConnection._on_connection_closed of <pika.adapters.select_connection.SelectConnection object at 0x7fa9dc0de590>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-21 17:42:02; Processing 0:_on_connection_open
+2017-04-21 17:42:02; Calling <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7fa9dc0e7cb0>> for "0:_on_connection_open"
+2017-04-21 17:42:02; Creating channel 1
+2017-04-21 17:42:02; Added: {'callback': <bound method SelectConnection._on_channel_cleanup of <pika.adapters.select_connection.SelectConnection object at 0x7fa9dc0de590>>, 'only': <pika.channel.Channel object at 0x7fa9e8c1b2d0>, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-21 17:42:02; Added: {'callback': <bound method Channel._on_getempty of <pika.channel.Channel object at 0x7fa9e8c1b2d0>>, 'only': None, 'one_shot': False, 'arguments': None}
+2017-04-21 17:42:02; Added: {'callback': <bound method Channel._on_cancel of <pika.channel.Channel object at 0x7fa9e8c1b2d0>>, 'only': None, 'one_shot': False, 'arguments': None}
+2017-04-21 17:42:02; Added: {'callback': <bound method Channel._on_flow of <pika.channel.Channel object at 0x7fa9e8c1b2d0>>, 'only': None, 'one_shot': False, 'arguments': None}
+2017-04-21 17:42:02; Added: {'callback': <bound method Channel._on_close of <pika.channel.Channel object at 0x7fa9e8c1b2d0>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-21 17:42:02; Adding in on_synchronous_complete callback
+2017-04-21 17:42:02; Added: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7fa9e8c1b2d0>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-21 17:42:02; Adding passed in callback
+2017-04-21 17:42:02; Added: {'callback': <bound method Channel._on_openok of <pika.channel.Channel object at 0x7fa9e8c1b2d0>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-21 17:42:02; Added: {'callback': <bound method BlockingChannel._on_consumer_cancelled_by_broker of <pika.adapters.blocking_connection.BlockingChannel object at 0x7fa9e8c1b450>>, 'only': None, 'one_shot': False, 'arguments': None}
+2017-04-21 17:42:02; Added: {'callback': <bound method _CallbackResult.signal_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7fa9dbe730e0>>, 'only': None, 'one_shot': False, 'arguments': None}
+2017-04-21 17:42:02; Added: {'callback': <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7fa9dbe734d0>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-21 17:42:02; Added: {'callback': <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7fa9dbe73518>>, 'only': None, 'one_shot': False, 'arguments': None}
+2017-04-21 17:42:02; Created channel=1
+2017-04-21 17:42:02; Processing 1:Channel.OpenOk
+2017-04-21 17:42:02; Processing use of oneshot callback
+2017-04-21 17:42:02; 0 registered uses left
+2017-04-21 17:42:02; Removing callback #0: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7fa9e8c1b2d0>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+2017-04-21 17:42:02; Processing use of oneshot callback
+2017-04-21 17:42:02; 0 registered uses left
+2017-04-21 17:42:02; Removing callback #0: {'callback': <bound method Channel._on_openok of <pika.channel.Channel object at 0x7fa9e8c1b2d0>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+2017-04-21 17:42:02; Calling <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7fa9e8c1b2d0>> for "1:Channel.OpenOk"
+2017-04-21 17:42:02; 0 blocked frames
+2017-04-21 17:42:02; Calling <bound method Channel._on_openok of <pika.channel.Channel object at 0x7fa9e8c1b2d0>> for "1:Channel.OpenOk"
+2017-04-21 17:42:02; Adding in on_synchronous_complete callback
+2017-04-21 17:42:02; Added: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7fa9e8c1b2d0>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-21 17:42:02; Adding passed in callback
+2017-04-21 17:42:02; Added: {'callback': <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7fa9dbe739e0>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-21 17:42:02; Processing 1:Exchange.DeclareOk
+2017-04-21 17:42:02; Processing use of oneshot callback
+2017-04-21 17:42:02; 0 registered uses left
+2017-04-21 17:42:02; Removing callback #0: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7fa9e8c1b2d0>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+2017-04-21 17:42:02; Processing use of oneshot callback
+2017-04-21 17:42:02; 0 registered uses left
+2017-04-21 17:42:02; Removing callback #0: {'callback': <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7fa9dbe739e0>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+2017-04-21 17:42:02; Calling <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7fa9e8c1b2d0>> for "1:Exchange.DeclareOk"
+2017-04-21 17:42:02; 0 blocked frames
+2017-04-21 17:42:02; Calling <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7fa9dbe739e0>> for "1:Exchange.DeclareOk"
+2017-04-21 17:42:02; Adding in on_synchronous_complete callback
+2017-04-21 17:42:02; Added: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7fa9e8c1b2d0>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-21 17:42:02; Adding passed in callback
+2017-04-21 17:42:02; Added: {'callback': <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7fa9dbe739e0>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-21 17:42:02; Processing 1:Queue.DeclareOk
+2017-04-21 17:42:02; Processing use of oneshot callback
+2017-04-21 17:42:02; 0 registered uses left
+2017-04-21 17:42:02; Removing callback #0: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7fa9e8c1b2d0>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+2017-04-21 17:42:02; Processing use of oneshot callback
+2017-04-21 17:42:02; 0 registered uses left
+2017-04-21 17:42:02; Removing callback #0: {'callback': <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7fa9dbe739e0>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+2017-04-21 17:42:02; Calling <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7fa9e8c1b2d0>> for "1:Queue.DeclareOk"
+2017-04-21 17:42:02; 0 blocked frames
+2017-04-21 17:42:02; Calling <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7fa9dbe739e0>> for "1:Queue.DeclareOk"
+2017-04-21 17:42:02; Adding in on_synchronous_complete callback
+2017-04-21 17:42:02; Added: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7fa9e8c1b2d0>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-21 17:42:02; Adding passed in callback
+2017-04-21 17:42:02; Added: {'callback': <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7fa9dbe739e0>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-21 17:42:02; Processing 1:Queue.BindOk
+2017-04-21 17:42:02; Processing use of oneshot callback
+2017-04-21 17:42:02; 0 registered uses left
+2017-04-21 17:42:02; Removing callback #0: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7fa9e8c1b2d0>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+2017-04-21 17:42:02; Processing use of oneshot callback
+2017-04-21 17:42:02; 0 registered uses left
+2017-04-21 17:42:02; Removing callback #0: {'callback': <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7fa9dbe739e0>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+2017-04-21 17:42:02; Calling <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7fa9e8c1b2d0>> for "1:Queue.BindOk"
+2017-04-21 17:42:02; 0 blocked frames
+2017-04-21 17:42:02; Calling <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7fa9dbe739e0>> for "1:Queue.BindOk"
+2017-04-21 17:42:02; Adding in on_synchronous_complete callback
+2017-04-21 17:42:02; Added: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7fa9e8c1b2d0>>, 'only': None, 'one_shot': True, 'arguments': {'consumer_tag': 'ctag1.2306fb8dbf21424a9c0200ab0253ba61'}, 'calls': 1}
+2017-04-21 17:42:02; Adding passed in callback
+2017-04-21 17:42:02; Added: {'callback': <bound method Channel._on_eventok of <pika.channel.Channel object at 0x7fa9e8c1b2d0>>, 'only': None, 'one_shot': True, 'arguments': {'consumer_tag': 'ctag1.2306fb8dbf21424a9c0200ab0253ba61'}, 'calls': 1}
+2017-04-21 17:42:02; Processing 1:Basic.ConsumeOk
+2017-04-21 17:42:02; Processing use of oneshot callback
+2017-04-21 17:42:02; 0 registered uses left
+2017-04-21 17:42:02; Comparing {'consumer_tag': 'ctag1.2306fb8dbf21424a9c0200ab0253ba61'} to {'consumer_tag': 'ctag1.2306fb8dbf21424a9c0200ab0253ba61'}
+2017-04-21 17:42:02; Removing callback #1: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7fa9e8c1b2d0>>, 'only': None, 'one_shot': True, 'arguments': {'consumer_tag': 'ctag1.2306fb8dbf21424a9c0200ab0253ba61'}, 'calls': 0}
+2017-04-21 17:42:02; Processing use of oneshot callback
+2017-04-21 17:42:02; 0 registered uses left
+2017-04-21 17:42:02; Comparing {'consumer_tag': 'ctag1.2306fb8dbf21424a9c0200ab0253ba61'} to {'consumer_tag': 'ctag1.2306fb8dbf21424a9c0200ab0253ba61'}
+2017-04-21 17:42:02; Removing callback #1: {'callback': <bound method Channel._on_eventok of <pika.channel.Channel object at 0x7fa9e8c1b2d0>>, 'only': None, 'one_shot': True, 'arguments': {'consumer_tag': 'ctag1.2306fb8dbf21424a9c0200ab0253ba61'}, 'calls': 0}
+2017-04-21 17:42:02; Calling <bound method _CallbackResult.signal_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7fa9dbe730e0>> for "1:Basic.ConsumeOk"
+2017-04-21 17:42:02; Calling <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7fa9e8c1b2d0>> for "1:Basic.ConsumeOk"
+2017-04-21 17:42:02; 0 blocked frames
+2017-04-21 17:42:02; Calling <bound method Channel._on_eventok of <pika.channel.Channel object at 0x7fa9e8c1b2d0>> for "1:Basic.ConsumeOk"
+2017-04-21 17:42:02; Discarding frame <METHOD(['channel_number=1', 'frame_type=1', "method=<Basic.ConsumeOk(['consumer_tag=ctag1.2306fb8dbf21424a9c0200ab0253ba61'])>"])>
+2017-04-21 17:47:53; Using EPollPoller
+2017-04-21 17:47:53; Added: {'callback': <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7ff1e3192cf8>>, 'only': None, 'one_shot': False, 'arguments': None}
+2017-04-21 17:47:53; Added: {'callback': <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7ff1e3192cb0>>, 'only': None, 'one_shot': False, 'arguments': None}
+2017-04-21 17:47:53; Added: {'callback': <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7ff1e3192d40>>, 'only': None, 'one_shot': False, 'arguments': None}
+2017-04-21 17:47:53; Added: {'callback': <bound method SelectConnection._on_connection_start of <pika.adapters.select_connection.SelectConnection object at 0x7ff1e3189590>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-21 17:47:53; Connecting to 127.0.0.1:5672
+2017-04-21 17:47:53; Processing 0:Connection.Start
+2017-04-21 17:47:53; Processing use of oneshot callback
+2017-04-21 17:47:53; 0 registered uses left
+2017-04-21 17:47:53; Removing callback #0: {'callback': <bound method SelectConnection._on_connection_start of <pika.adapters.select_connection.SelectConnection object at 0x7ff1e3189590>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+2017-04-21 17:47:53; Calling <bound method SelectConnection._on_connection_start of <pika.adapters.select_connection.SelectConnection object at 0x7ff1e3189590>> for "0:Connection.Start"
+2017-04-21 17:47:53; Added: {'callback': <bound method SelectConnection._on_connection_tune of <pika.adapters.select_connection.SelectConnection object at 0x7ff1e3189590>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-21 17:47:53; Processing 0:Connection.Tune
+2017-04-21 17:47:53; Processing use of oneshot callback
+2017-04-21 17:47:53; 0 registered uses left
+2017-04-21 17:47:53; Removing callback #0: {'callback': <bound method SelectConnection._on_connection_tune of <pika.adapters.select_connection.SelectConnection object at 0x7ff1e3189590>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+2017-04-21 17:47:53; Calling <bound method SelectConnection._on_connection_tune of <pika.adapters.select_connection.SelectConnection object at 0x7ff1e3189590>> for "0:Connection.Tune"
+2017-04-21 17:47:53; Creating a HeartbeatChecker: 60
+2017-04-21 17:47:53; Added: {'callback': <bound method SelectConnection._on_connection_open of <pika.adapters.select_connection.SelectConnection object at 0x7ff1e3189590>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-21 17:47:53; Processing 0:Connection.OpenOk
+2017-04-21 17:47:53; Processing use of oneshot callback
+2017-04-21 17:47:53; 0 registered uses left
+2017-04-21 17:47:53; Removing callback #0: {'callback': <bound method SelectConnection._on_connection_open of <pika.adapters.select_connection.SelectConnection object at 0x7ff1e3189590>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+2017-04-21 17:47:53; Calling <bound method SelectConnection._on_connection_open of <pika.adapters.select_connection.SelectConnection object at 0x7ff1e3189590>> for "0:Connection.OpenOk"
+2017-04-21 17:47:53; Added: {'callback': <bound method SelectConnection._on_connection_closed of <pika.adapters.select_connection.SelectConnection object at 0x7ff1e3189590>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-21 17:47:53; Processing 0:_on_connection_open
+2017-04-21 17:47:53; Calling <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7ff1e3192cb0>> for "0:_on_connection_open"
+2017-04-21 17:47:53; Creating channel 1
+2017-04-21 17:47:53; Added: {'callback': <bound method SelectConnection._on_channel_cleanup of <pika.adapters.select_connection.SelectConnection object at 0x7ff1e3189590>>, 'only': <pika.channel.Channel object at 0x7ff1efcc62d0>, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-21 17:47:53; Added: {'callback': <bound method Channel._on_getempty of <pika.channel.Channel object at 0x7ff1efcc62d0>>, 'only': None, 'one_shot': False, 'arguments': None}
+2017-04-21 17:47:53; Added: {'callback': <bound method Channel._on_cancel of <pika.channel.Channel object at 0x7ff1efcc62d0>>, 'only': None, 'one_shot': False, 'arguments': None}
+2017-04-21 17:47:53; Added: {'callback': <bound method Channel._on_flow of <pika.channel.Channel object at 0x7ff1efcc62d0>>, 'only': None, 'one_shot': False, 'arguments': None}
+2017-04-21 17:47:53; Added: {'callback': <bound method Channel._on_close of <pika.channel.Channel object at 0x7ff1efcc62d0>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-21 17:47:53; Adding in on_synchronous_complete callback
+2017-04-21 17:47:53; Added: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7ff1efcc62d0>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-21 17:47:53; Adding passed in callback
+2017-04-21 17:47:53; Added: {'callback': <bound method Channel._on_openok of <pika.channel.Channel object at 0x7ff1efcc62d0>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-21 17:47:53; Added: {'callback': <bound method BlockingChannel._on_consumer_cancelled_by_broker of <pika.adapters.blocking_connection.BlockingChannel object at 0x7ff1efcc6450>>, 'only': None, 'one_shot': False, 'arguments': None}
+2017-04-21 17:47:53; Added: {'callback': <bound method _CallbackResult.signal_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7ff1e2f1e0e0>>, 'only': None, 'one_shot': False, 'arguments': None}
+2017-04-21 17:47:53; Added: {'callback': <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7ff1e2f1e4d0>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-21 17:47:53; Added: {'callback': <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7ff1e2f1e518>>, 'only': None, 'one_shot': False, 'arguments': None}
+2017-04-21 17:47:53; Created channel=1
+2017-04-21 17:47:53; Processing 1:Channel.OpenOk
+2017-04-21 17:47:53; Processing use of oneshot callback
+2017-04-21 17:47:53; 0 registered uses left
+2017-04-21 17:47:53; Removing callback #0: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7ff1efcc62d0>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+2017-04-21 17:47:53; Processing use of oneshot callback
+2017-04-21 17:47:53; 0 registered uses left
+2017-04-21 17:47:53; Removing callback #0: {'callback': <bound method Channel._on_openok of <pika.channel.Channel object at 0x7ff1efcc62d0>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+2017-04-21 17:47:53; Calling <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7ff1efcc62d0>> for "1:Channel.OpenOk"
+2017-04-21 17:47:53; 0 blocked frames
+2017-04-21 17:47:53; Calling <bound method Channel._on_openok of <pika.channel.Channel object at 0x7ff1efcc62d0>> for "1:Channel.OpenOk"
+2017-04-21 17:47:53; Adding in on_synchronous_complete callback
+2017-04-21 17:47:53; Added: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7ff1efcc62d0>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-21 17:47:53; Adding passed in callback
+2017-04-21 17:47:53; Added: {'callback': <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7ff1e2f1e9e0>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-21 17:47:53; Processing 1:Exchange.DeclareOk
+2017-04-21 17:47:53; Processing use of oneshot callback
+2017-04-21 17:47:53; 0 registered uses left
+2017-04-21 17:47:53; Removing callback #0: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7ff1efcc62d0>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+2017-04-21 17:47:53; Processing use of oneshot callback
+2017-04-21 17:47:53; 0 registered uses left
+2017-04-21 17:47:53; Removing callback #0: {'callback': <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7ff1e2f1e9e0>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+2017-04-21 17:47:53; Calling <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7ff1efcc62d0>> for "1:Exchange.DeclareOk"
+2017-04-21 17:47:53; 0 blocked frames
+2017-04-21 17:47:53; Calling <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7ff1e2f1e9e0>> for "1:Exchange.DeclareOk"
+2017-04-21 17:47:53; Adding in on_synchronous_complete callback
+2017-04-21 17:47:53; Added: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7ff1efcc62d0>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-21 17:47:53; Adding passed in callback
+2017-04-21 17:47:53; Added: {'callback': <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7ff1e2f1e9e0>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-21 17:47:53; Processing 1:Queue.DeclareOk
+2017-04-21 17:47:53; Processing use of oneshot callback
+2017-04-21 17:47:53; 0 registered uses left
+2017-04-21 17:47:53; Removing callback #0: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7ff1efcc62d0>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+2017-04-21 17:47:53; Processing use of oneshot callback
+2017-04-21 17:47:53; 0 registered uses left
+2017-04-21 17:47:53; Removing callback #0: {'callback': <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7ff1e2f1e9e0>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+2017-04-21 17:47:53; Calling <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7ff1efcc62d0>> for "1:Queue.DeclareOk"
+2017-04-21 17:47:53; 0 blocked frames
+2017-04-21 17:47:53; Calling <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7ff1e2f1e9e0>> for "1:Queue.DeclareOk"
+2017-04-21 17:47:53; Adding in on_synchronous_complete callback
+2017-04-21 17:47:53; Added: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7ff1efcc62d0>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-21 17:47:53; Adding passed in callback
+2017-04-21 17:47:53; Added: {'callback': <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7ff1e2f1e9e0>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-21 17:47:53; Processing 1:Queue.BindOk
+2017-04-21 17:47:53; Processing use of oneshot callback
+2017-04-21 17:47:53; 0 registered uses left
+2017-04-21 17:47:53; Removing callback #0: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7ff1efcc62d0>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+2017-04-21 17:47:53; Processing use of oneshot callback
+2017-04-21 17:47:53; 0 registered uses left
+2017-04-21 17:47:53; Removing callback #0: {'callback': <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7ff1e2f1e9e0>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+2017-04-21 17:47:53; Calling <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7ff1efcc62d0>> for "1:Queue.BindOk"
+2017-04-21 17:47:53; 0 blocked frames
+2017-04-21 17:47:53; Calling <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7ff1e2f1e9e0>> for "1:Queue.BindOk"
+2017-04-21 17:47:53; Adding in on_synchronous_complete callback
+2017-04-21 17:47:53; Added: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7ff1efcc62d0>>, 'only': None, 'one_shot': True, 'arguments': {'consumer_tag': 'ctag1.cb7fede2cc0445e28711cb37c212ee22'}, 'calls': 1}
+2017-04-21 17:47:53; Adding passed in callback
+2017-04-21 17:47:53; Added: {'callback': <bound method Channel._on_eventok of <pika.channel.Channel object at 0x7ff1efcc62d0>>, 'only': None, 'one_shot': True, 'arguments': {'consumer_tag': 'ctag1.cb7fede2cc0445e28711cb37c212ee22'}, 'calls': 1}
+2017-04-21 17:47:53; Processing 1:Basic.ConsumeOk
+2017-04-21 17:47:53; Processing use of oneshot callback
+2017-04-21 17:47:53; 0 registered uses left
+2017-04-21 17:47:53; Comparing {'consumer_tag': 'ctag1.cb7fede2cc0445e28711cb37c212ee22'} to {'consumer_tag': 'ctag1.cb7fede2cc0445e28711cb37c212ee22'}
+2017-04-21 17:47:53; Removing callback #1: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7ff1efcc62d0>>, 'only': None, 'one_shot': True, 'arguments': {'consumer_tag': 'ctag1.cb7fede2cc0445e28711cb37c212ee22'}, 'calls': 0}
+2017-04-21 17:47:53; Processing use of oneshot callback
+2017-04-21 17:47:53; 0 registered uses left
+2017-04-21 17:47:53; Comparing {'consumer_tag': 'ctag1.cb7fede2cc0445e28711cb37c212ee22'} to {'consumer_tag': 'ctag1.cb7fede2cc0445e28711cb37c212ee22'}
+2017-04-21 17:47:53; Removing callback #1: {'callback': <bound method Channel._on_eventok of <pika.channel.Channel object at 0x7ff1efcc62d0>>, 'only': None, 'one_shot': True, 'arguments': {'consumer_tag': 'ctag1.cb7fede2cc0445e28711cb37c212ee22'}, 'calls': 0}
+2017-04-21 17:47:53; Calling <bound method _CallbackResult.signal_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7ff1e2f1e0e0>> for "1:Basic.ConsumeOk"
+2017-04-21 17:47:53; Calling <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7ff1efcc62d0>> for "1:Basic.ConsumeOk"
+2017-04-21 17:47:53; 0 blocked frames
+2017-04-21 17:47:53; Calling <bound method Channel._on_eventok of <pika.channel.Channel object at 0x7ff1efcc62d0>> for "1:Basic.ConsumeOk"
+2017-04-21 17:47:53; Discarding frame <METHOD(['channel_number=1', 'frame_type=1', "method=<Basic.ConsumeOk(['consumer_tag=ctag1.cb7fede2cc0445e28711cb37c212ee22'])>"])>
+2017-04-21 17:48:44; Adding in on_synchronous_complete callback
+2017-04-21 17:48:44; Added: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7fd92ec09a90>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-21 17:48:44; Adding passed in callback
+2017-04-21 17:48:44; Added: {'callback': <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7fd90fa27cb0>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-21 17:48:44; Processing 1:Exchange.DeclareOk
+2017-04-21 17:48:44; Processing use of oneshot callback
+2017-04-21 17:48:44; 0 registered uses left
+2017-04-21 17:48:44; Removing callback #0: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7fd92ec09a90>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+2017-04-21 17:48:44; Processing use of oneshot callback
+2017-04-21 17:48:44; 0 registered uses left
+2017-04-21 17:48:44; Removing callback #0: {'callback': <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7fd90fa27cb0>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+2017-04-21 17:48:44; Calling <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7fd92ec09a90>> for "1:Exchange.DeclareOk"
+2017-04-21 17:48:44; 0 blocked frames
+2017-04-21 17:48:44; Calling <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7fd90fa27cb0>> for "1:Exchange.DeclareOk"
+2017-04-21 17:48:44; Adding in on_synchronous_complete callback
+2017-04-21 17:48:44; Added: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7fd92ec09a90>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-21 17:48:44; Adding passed in callback
+2017-04-21 17:48:44; Added: {'callback': <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7fd90fa27cb0>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-21 17:48:44; Processing 1:Queue.DeclareOk
+2017-04-21 17:48:44; Processing use of oneshot callback
+2017-04-21 17:48:44; 0 registered uses left
+2017-04-21 17:48:44; Removing callback #0: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7fd92ec09a90>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+2017-04-21 17:48:44; Processing use of oneshot callback
+2017-04-21 17:48:44; 0 registered uses left
+2017-04-21 17:48:44; Removing callback #0: {'callback': <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7fd90fa27cb0>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+2017-04-21 17:48:44; Calling <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7fd92ec09a90>> for "1:Queue.DeclareOk"
+2017-04-21 17:48:44; 0 blocked frames
+2017-04-21 17:48:44; Calling <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7fd90fa27cb0>> for "1:Queue.DeclareOk"
+2017-04-21 17:48:44; Adding in on_synchronous_complete callback
+2017-04-21 17:48:44; Added: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7fd92ec09a90>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-21 17:48:44; Adding passed in callback
+2017-04-21 17:48:44; Added: {'callback': <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7fd90fa27cb0>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-21 17:48:44; Processing 1:Queue.BindOk
+2017-04-21 17:48:44; Processing use of oneshot callback
+2017-04-21 17:48:44; 0 registered uses left
+2017-04-21 17:48:44; Removing callback #0: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7fd92ec09a90>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+2017-04-21 17:48:44; Processing use of oneshot callback
+2017-04-21 17:48:44; 0 registered uses left
+2017-04-21 17:48:44; Removing callback #0: {'callback': <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7fd90fa27cb0>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+2017-04-21 17:48:44; Calling <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7fd92ec09a90>> for "1:Queue.BindOk"
+2017-04-21 17:48:44; 0 blocked frames
+2017-04-21 17:48:44; Calling <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7fd90fa27cb0>> for "1:Queue.BindOk"
+2017-04-21 17:48:44; Adding in on_synchronous_complete callback
+2017-04-21 17:48:44; Added: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7fd92ec09a90>>, 'only': None, 'one_shot': True, 'arguments': {'consumer_tag': 'ctag1.d770066969b046e39104c6fa7469b254'}, 'calls': 1}
+2017-04-21 17:48:44; Adding passed in callback
+2017-04-21 17:48:44; Added: {'callback': <bound method Channel._on_eventok of <pika.channel.Channel object at 0x7fd92ec09a90>>, 'only': None, 'one_shot': True, 'arguments': {'consumer_tag': 'ctag1.d770066969b046e39104c6fa7469b254'}, 'calls': 1}
+2017-04-21 17:48:44; Processing 1:Basic.ConsumeOk
+2017-04-21 17:48:44; Processing use of oneshot callback
+2017-04-21 17:48:44; 0 registered uses left
+2017-04-21 17:48:44; Comparing {'consumer_tag': 'ctag1.d770066969b046e39104c6fa7469b254'} to {'consumer_tag': 'ctag1.d770066969b046e39104c6fa7469b254'}
+2017-04-21 17:48:44; Removing callback #1: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7fd92ec09a90>>, 'only': None, 'one_shot': True, 'arguments': {'consumer_tag': 'ctag1.d770066969b046e39104c6fa7469b254'}, 'calls': 0}
+2017-04-21 17:48:44; Processing use of oneshot callback
+2017-04-21 17:48:44; 0 registered uses left
+2017-04-21 17:48:44; Comparing {'consumer_tag': 'ctag1.d770066969b046e39104c6fa7469b254'} to {'consumer_tag': 'ctag1.d770066969b046e39104c6fa7469b254'}
+2017-04-21 17:48:44; Removing callback #1: {'callback': <bound method Channel._on_eventok of <pika.channel.Channel object at 0x7fd92ec09a90>>, 'only': None, 'one_shot': True, 'arguments': {'consumer_tag': 'ctag1.d770066969b046e39104c6fa7469b254'}, 'calls': 0}
+2017-04-21 17:48:44; Calling <bound method _CallbackResult.signal_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7fd90fa272d8>> for "1:Basic.ConsumeOk"
+2017-04-21 17:48:44; Calling <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7fd92ec09a90>> for "1:Basic.ConsumeOk"
+2017-04-21 17:48:44; 0 blocked frames
+2017-04-21 17:48:44; Calling <bound method Channel._on_eventok of <pika.channel.Channel object at 0x7fd92ec09a90>> for "1:Basic.ConsumeOk"
+2017-04-21 17:48:44; Discarding frame <METHOD(['channel_number=1', 'frame_type=1', "method=<Basic.ConsumeOk(['consumer_tag=ctag1.d770066969b046e39104c6fa7469b254'])>"])>
+2017-04-21 17:48:44; consumer ready, on my_queue
+2017-04-21 17:48:45; Server connected
+2017-04-21 17:49:44; Received heartbeat frame
+2017-04-21 17:49:44; Received 1 heartbeat frames, sent 0
+2017-04-21 17:49:44; Sending heartbeat frame
+2017-04-21 17:50:44; Received heartbeat frame
+2017-04-21 17:50:44; Received 2 heartbeat frames, sent 1
+2017-04-21 17:50:44; Sending heartbeat frame
+2017-04-21 17:51:44; Received heartbeat frame
+2017-04-21 17:51:44; Received 3 heartbeat frames, sent 2
+2017-04-21 17:51:44; Sending heartbeat frame
+2017-04-22 15:14:54; Adding in on_synchronous_complete callback
+2017-04-22 15:14:54; Added: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7efe8c3be510>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-22 15:14:54; Adding passed in callback
+2017-04-22 15:14:54; Added: {'callback': <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7efe8c154c20>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-22 15:14:54; Processing 1:Exchange.DeclareOk
+2017-04-22 15:14:54; Processing use of oneshot callback
+2017-04-22 15:14:54; 0 registered uses left
+2017-04-22 15:14:54; Removing callback #0: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7efe8c3be510>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+2017-04-22 15:14:54; Processing use of oneshot callback
+2017-04-22 15:14:54; 0 registered uses left
+2017-04-22 15:14:54; Removing callback #0: {'callback': <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7efe8c154c20>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+2017-04-22 15:14:54; Calling <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7efe8c3be510>> for "1:Exchange.DeclareOk"
+2017-04-22 15:14:54; 0 blocked frames
+2017-04-22 15:14:54; Calling <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7efe8c154c20>> for "1:Exchange.DeclareOk"
+2017-04-22 15:14:54; Adding in on_synchronous_complete callback
+2017-04-22 15:14:54; Added: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7efe8c3be510>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-22 15:14:54; Adding passed in callback
+2017-04-22 15:14:54; Added: {'callback': <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7efe8c154c20>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-22 15:14:54; Processing 1:Queue.DeclareOk
+2017-04-22 15:14:54; Processing use of oneshot callback
+2017-04-22 15:14:54; 0 registered uses left
+2017-04-22 15:14:54; Removing callback #0: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7efe8c3be510>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+2017-04-22 15:14:54; Processing use of oneshot callback
+2017-04-22 15:14:54; 0 registered uses left
+2017-04-22 15:14:54; Removing callback #0: {'callback': <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7efe8c154c20>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+2017-04-22 15:14:54; Calling <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7efe8c3be510>> for "1:Queue.DeclareOk"
+2017-04-22 15:14:54; 0 blocked frames
+2017-04-22 15:14:54; Calling <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7efe8c154c20>> for "1:Queue.DeclareOk"
+2017-04-22 15:14:54; Adding in on_synchronous_complete callback
+2017-04-22 15:14:54; Added: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7efe8c3be510>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-22 15:14:54; Adding passed in callback
+2017-04-22 15:14:54; Added: {'callback': <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7efe8c154c20>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-22 15:14:54; Processing 1:Queue.BindOk
+2017-04-22 15:14:54; Processing use of oneshot callback
+2017-04-22 15:14:54; 0 registered uses left
+2017-04-22 15:14:54; Removing callback #0: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7efe8c3be510>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+2017-04-22 15:14:54; Processing use of oneshot callback
+2017-04-22 15:14:54; 0 registered uses left
+2017-04-22 15:14:54; Removing callback #0: {'callback': <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7efe8c154c20>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+2017-04-22 15:14:54; Calling <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7efe8c3be510>> for "1:Queue.BindOk"
+2017-04-22 15:14:54; 0 blocked frames
+2017-04-22 15:14:54; Calling <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7efe8c154c20>> for "1:Queue.BindOk"
+2017-04-22 15:14:54; Adding in on_synchronous_complete callback
+2017-04-22 15:14:54; Added: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7efe8c3be510>>, 'only': None, 'one_shot': True, 'arguments': {'consumer_tag': 'ctag1.bd043aa688c34e109d4ae77ab45cd0d4'}, 'calls': 1}
+2017-04-22 15:14:54; Adding passed in callback
+2017-04-22 15:14:54; Added: {'callback': <bound method Channel._on_eventok of <pika.channel.Channel object at 0x7efe8c3be510>>, 'only': None, 'one_shot': True, 'arguments': {'consumer_tag': 'ctag1.bd043aa688c34e109d4ae77ab45cd0d4'}, 'calls': 1}
+2017-04-22 15:14:54; Processing 1:Basic.ConsumeOk
+2017-04-22 15:14:54; Processing use of oneshot callback
+2017-04-22 15:14:54; 0 registered uses left
+2017-04-22 15:14:54; Comparing {'consumer_tag': 'ctag1.bd043aa688c34e109d4ae77ab45cd0d4'} to {'consumer_tag': 'ctag1.bd043aa688c34e109d4ae77ab45cd0d4'}
+2017-04-22 15:14:54; Removing callback #1: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7efe8c3be510>>, 'only': None, 'one_shot': True, 'arguments': {'consumer_tag': 'ctag1.bd043aa688c34e109d4ae77ab45cd0d4'}, 'calls': 0}
+2017-04-22 15:14:54; Processing use of oneshot callback
+2017-04-22 15:14:54; 0 registered uses left
+2017-04-22 15:14:54; Comparing {'consumer_tag': 'ctag1.bd043aa688c34e109d4ae77ab45cd0d4'} to {'consumer_tag': 'ctag1.bd043aa688c34e109d4ae77ab45cd0d4'}
+2017-04-22 15:14:54; Removing callback #1: {'callback': <bound method Channel._on_eventok of <pika.channel.Channel object at 0x7efe8c3be510>>, 'only': None, 'one_shot': True, 'arguments': {'consumer_tag': 'ctag1.bd043aa688c34e109d4ae77ab45cd0d4'}, 'calls': 0}
+2017-04-22 15:14:54; Calling <bound method _CallbackResult.signal_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7efe8c154248>> for "1:Basic.ConsumeOk"
+2017-04-22 15:14:54; Calling <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7efe8c3be510>> for "1:Basic.ConsumeOk"
+2017-04-22 15:14:54; 0 blocked frames
+2017-04-22 15:14:54; Calling <bound method Channel._on_eventok of <pika.channel.Channel object at 0x7efe8c3be510>> for "1:Basic.ConsumeOk"
+2017-04-22 15:14:54; Discarding frame <METHOD(['channel_number=1', 'frame_type=1', "method=<Basic.ConsumeOk(['consumer_tag=ctag1.bd043aa688c34e109d4ae77ab45cd0d4'])>"])>
+2017-04-22 15:14:54; consumer ready, on my_queue
+2017-04-22 15:14:55; Server connected
+2017-04-22 15:15:54; Received heartbeat frame
+2017-04-22 15:15:54; Received 1 heartbeat frames, sent 0
+2017-04-22 15:15:54; Sending heartbeat frame
+2017-04-22 15:25:45; Adding in on_synchronous_complete callback
+2017-04-22 15:25:45; Added: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7f3e067d4090>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-22 15:25:45; Adding passed in callback
+2017-04-22 15:25:45; Added: {'callback': <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7f3e0656ac68>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-22 15:25:45; Processing 1:Exchange.DeclareOk
+2017-04-22 15:25:45; Processing use of oneshot callback
+2017-04-22 15:25:45; 0 registered uses left
+2017-04-22 15:25:45; Removing callback #0: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7f3e067d4090>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+2017-04-22 15:25:45; Processing use of oneshot callback
+2017-04-22 15:25:45; 0 registered uses left
+2017-04-22 15:25:45; Removing callback #0: {'callback': <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7f3e0656ac68>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+2017-04-22 15:25:45; Calling <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7f3e067d4090>> for "1:Exchange.DeclareOk"
+2017-04-22 15:25:45; 0 blocked frames
+2017-04-22 15:25:45; Calling <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7f3e0656ac68>> for "1:Exchange.DeclareOk"
+2017-04-22 15:25:45; Adding in on_synchronous_complete callback
+2017-04-22 15:25:45; Added: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7f3e067d4090>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-22 15:25:45; Adding passed in callback
+2017-04-22 15:25:45; Added: {'callback': <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7f3e0656ac68>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-22 15:25:45; Processing 1:Queue.DeclareOk
+2017-04-22 15:25:45; Processing use of oneshot callback
+2017-04-22 15:25:45; 0 registered uses left
+2017-04-22 15:25:45; Removing callback #0: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7f3e067d4090>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+2017-04-22 15:25:45; Processing use of oneshot callback
+2017-04-22 15:25:45; 0 registered uses left
+2017-04-22 15:25:45; Removing callback #0: {'callback': <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7f3e0656ac68>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+2017-04-22 15:25:45; Calling <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7f3e067d4090>> for "1:Queue.DeclareOk"
+2017-04-22 15:25:45; 0 blocked frames
+2017-04-22 15:25:45; Calling <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7f3e0656ac68>> for "1:Queue.DeclareOk"
+2017-04-22 15:25:45; Adding in on_synchronous_complete callback
+2017-04-22 15:25:45; Added: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7f3e067d4090>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-22 15:25:45; Adding passed in callback
+2017-04-22 15:25:45; Added: {'callback': <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7f3e0656ac68>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-22 15:25:45; Processing 1:Queue.BindOk
+2017-04-22 15:25:45; Processing use of oneshot callback
+2017-04-22 15:25:45; 0 registered uses left
+2017-04-22 15:25:45; Removing callback #0: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7f3e067d4090>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+2017-04-22 15:25:45; Processing use of oneshot callback
+2017-04-22 15:25:45; 0 registered uses left
+2017-04-22 15:25:45; Removing callback #0: {'callback': <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7f3e0656ac68>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+2017-04-22 15:25:45; Calling <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7f3e067d4090>> for "1:Queue.BindOk"
+2017-04-22 15:25:45; 0 blocked frames
+2017-04-22 15:25:45; Calling <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7f3e0656ac68>> for "1:Queue.BindOk"
+2017-04-22 15:25:45; Adding in on_synchronous_complete callback
+2017-04-22 15:25:45; Added: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7f3e067d4090>>, 'only': None, 'one_shot': True, 'arguments': {'consumer_tag': 'ctag1.26a6b312fd0a475db1386a54e241b57e'}, 'calls': 1}
+2017-04-22 15:25:45; Adding passed in callback
+2017-04-22 15:25:45; Added: {'callback': <bound method Channel._on_eventok of <pika.channel.Channel object at 0x7f3e067d4090>>, 'only': None, 'one_shot': True, 'arguments': {'consumer_tag': 'ctag1.26a6b312fd0a475db1386a54e241b57e'}, 'calls': 1}
+2017-04-22 15:25:45; Processing 1:Basic.ConsumeOk
+2017-04-22 15:25:45; Processing use of oneshot callback
+2017-04-22 15:25:45; 0 registered uses left
+2017-04-22 15:25:45; Comparing {'consumer_tag': 'ctag1.26a6b312fd0a475db1386a54e241b57e'} to {'consumer_tag': 'ctag1.26a6b312fd0a475db1386a54e241b57e'}
+2017-04-22 15:25:45; Removing callback #1: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7f3e067d4090>>, 'only': None, 'one_shot': True, 'arguments': {'consumer_tag': 'ctag1.26a6b312fd0a475db1386a54e241b57e'}, 'calls': 0}
+2017-04-22 15:25:45; Processing use of oneshot callback
+2017-04-22 15:25:45; 0 registered uses left
+2017-04-22 15:25:45; Comparing {'consumer_tag': 'ctag1.26a6b312fd0a475db1386a54e241b57e'} to {'consumer_tag': 'ctag1.26a6b312fd0a475db1386a54e241b57e'}
+2017-04-22 15:25:45; Removing callback #1: {'callback': <bound method Channel._on_eventok of <pika.channel.Channel object at 0x7f3e067d4090>>, 'only': None, 'one_shot': True, 'arguments': {'consumer_tag': 'ctag1.26a6b312fd0a475db1386a54e241b57e'}, 'calls': 0}
+2017-04-22 15:25:45; Calling <bound method _CallbackResult.signal_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7f3e0656a290>> for "1:Basic.ConsumeOk"
+2017-04-22 15:25:45; Calling <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7f3e067d4090>> for "1:Basic.ConsumeOk"
+2017-04-22 15:25:45; 0 blocked frames
+2017-04-22 15:25:45; Calling <bound method Channel._on_eventok of <pika.channel.Channel object at 0x7f3e067d4090>> for "1:Basic.ConsumeOk"
+2017-04-22 15:25:45; Discarding frame <METHOD(['channel_number=1', 'frame_type=1', "method=<Basic.ConsumeOk(['consumer_tag=ctag1.26a6b312fd0a475db1386a54e241b57e'])>"])>
+2017-04-22 15:25:45; consumer ready, on my_queue
+2017-04-22 15:25:46; Server connected
+2017-04-22 15:25:48; Disconnecting from RabbitMQ..
+2017-04-22 15:25:48; Cancelling 1 consumers
+2017-04-22 15:25:48; Added: {'callback': <bound method _CallbackResult.signal_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7f3e06579560>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-22 15:25:48; Adding in on_synchronous_complete callback
+2017-04-22 15:25:48; Added: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7f3e067d4090>>, 'only': None, 'one_shot': True, 'arguments': {'consumer_tag': 'ctag1.26a6b312fd0a475db1386a54e241b57e'}, 'calls': 1}
+2017-04-22 15:25:48; Adding passed in callback
+2017-04-22 15:25:48; Added: {'callback': <bound method Channel._on_cancelok of <pika.channel.Channel object at 0x7f3e067d4090>>, 'only': None, 'one_shot': True, 'arguments': {'consumer_tag': 'ctag1.26a6b312fd0a475db1386a54e241b57e'}, 'calls': 1}
+2017-04-22 15:25:48; Processing 1:Basic.CancelOk
+2017-04-22 15:25:48; Processing use of oneshot callback
+2017-04-22 15:25:48; 0 registered uses left
+2017-04-22 15:25:48; Removing callback #0: {'callback': <bound method _CallbackResult.signal_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7f3e06579560>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+2017-04-22 15:25:48; Processing use of oneshot callback
+2017-04-22 15:25:48; 0 registered uses left
+2017-04-22 15:25:48; Comparing {'consumer_tag': 'ctag1.26a6b312fd0a475db1386a54e241b57e'} to {'consumer_tag': 'ctag1.26a6b312fd0a475db1386a54e241b57e'}
+2017-04-22 15:25:48; Removing callback #0: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7f3e067d4090>>, 'only': None, 'one_shot': True, 'arguments': {'consumer_tag': 'ctag1.26a6b312fd0a475db1386a54e241b57e'}, 'calls': 0}
+2017-04-22 15:25:48; Processing use of oneshot callback
+2017-04-22 15:25:48; 0 registered uses left
+2017-04-22 15:25:48; Comparing {'consumer_tag': 'ctag1.26a6b312fd0a475db1386a54e241b57e'} to {'consumer_tag': 'ctag1.26a6b312fd0a475db1386a54e241b57e'}
+2017-04-22 15:25:48; Removing callback #0: {'callback': <bound method Channel._on_cancelok of <pika.channel.Channel object at 0x7f3e067d4090>>, 'only': None, 'one_shot': True, 'arguments': {'consumer_tag': 'ctag1.26a6b312fd0a475db1386a54e241b57e'}, 'calls': 0}
+2017-04-22 15:25:48; Calling <bound method _CallbackResult.signal_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7f3e06579560>> for "1:Basic.CancelOk"
+2017-04-22 15:25:48; Calling <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7f3e067d4090>> for "1:Basic.CancelOk"
+2017-04-22 15:25:48; 0 blocked frames
+2017-04-22 15:25:48; Calling <bound method Channel._on_cancelok of <pika.channel.Channel object at 0x7f3e067d4090>> for "1:Basic.CancelOk"
+2017-04-22 15:25:48; Closing connection (200): Normal shutdown
+2017-04-22 15:25:48; Channel.close(200, Normal shutdown)
+2017-04-22 15:25:48; Added: {'callback': <bound method _CallbackResult.signal_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7f3e06579200>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-22 15:25:48; Channel.close(200, Normal shutdown)
+2017-04-22 15:25:48; Adding in on_synchronous_complete callback
+2017-04-22 15:25:48; Added: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7f3e067d4090>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-22 15:25:48; Adding passed in callback
+2017-04-22 15:25:48; Added: {'callback': <bound method Channel._on_closeok of <pika.channel.Channel object at 0x7f3e067d4090>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-22 15:25:48; Processing 1:Channel.CloseOk
+2017-04-22 15:25:48; Processing use of oneshot callback
+2017-04-22 15:25:48; 0 registered uses left
+2017-04-22 15:25:48; Removing callback #0: {'callback': <bound method _CallbackResult.signal_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7f3e06579200>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+2017-04-22 15:25:48; Processing use of oneshot callback
+2017-04-22 15:25:48; 0 registered uses left
+2017-04-22 15:25:48; Removing callback #0: {'callback': <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7f3e067d4090>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+2017-04-22 15:25:48; Processing use of oneshot callback
+2017-04-22 15:25:48; 0 registered uses left
+2017-04-22 15:25:48; Removing callback #0: {'callback': <bound method Channel._on_closeok of <pika.channel.Channel object at 0x7f3e067d4090>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+2017-04-22 15:25:48; Calling <bound method _CallbackResult.signal_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7f3e06579200>> for "1:Channel.CloseOk"
+2017-04-22 15:25:48; Calling <bound method Channel._on_synchronous_complete of <pika.channel.Channel object at 0x7f3e067d4090>> for "1:Channel.CloseOk"
+2017-04-22 15:25:48; 0 blocked frames
+2017-04-22 15:25:48; Calling <bound method Channel._on_closeok of <pika.channel.Channel object at 0x7f3e067d4090>> for "1:Channel.CloseOk"
+2017-04-22 15:25:48; Processing 1:_on_channel_cleanup
+2017-04-22 15:25:48; Processing use of oneshot callback
+2017-04-22 15:25:48; 0 registered uses left
+2017-04-22 15:25:48; Removing callback #0: {'callback': <bound method SelectConnection._on_channel_cleanup of <pika.adapters.select_connection.SelectConnection object at 0x7f3e08865c90>>, 'only': <pika.channel.Channel object at 0x7f3e067d4090>, 'one_shot': True, 'arguments': None, 'calls': 0}
+2017-04-22 15:25:48; Calling <bound method SelectConnection._on_channel_cleanup of <pika.adapters.select_connection.SelectConnection object at 0x7f3e08865c90>> for "1:_on_channel_cleanup"
+2017-04-22 15:25:48; Removed channel 1
+2017-04-22 15:25:48; Clearing out '1' from the stack
+2017-04-22 15:25:48; Closing connection (200): Normal shutdown
+2017-04-22 15:25:48; Added: {'callback': <bound method SelectConnection._on_connection_closed of <pika.adapters.select_connection.SelectConnection object at 0x7f3e08865c90>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-22 15:25:48; Processing 0:Connection.CloseOk
+2017-04-22 15:25:48; Processing use of oneshot callback
+2017-04-22 15:25:48; 0 registered uses left
+2017-04-22 15:25:48; Removing callback #0: {'callback': <bound method SelectConnection._on_connection_closed of <pika.adapters.select_connection.SelectConnection object at 0x7f3e08865c90>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 0}
+2017-04-22 15:25:48; Calling <bound method SelectConnection._on_connection_closed of <pika.adapters.select_connection.SelectConnection object at 0x7f3e08865c90>> for "0:Connection.CloseOk"
+2017-04-22 15:25:48; Removing timeout for next heartbeat interval
+2017-04-22 15:25:48; Added: {'callback': <bound method SelectConnection._on_connection_start of <pika.adapters.select_connection.SelectConnection object at 0x7f3e08865c90>>, 'only': None, 'one_shot': True, 'arguments': None, 'calls': 1}
+2017-04-22 15:25:48; Disconnected from RabbitMQ at localhost:5672 (200): Normal shutdown
+2017-04-22 15:25:48; Processing 0:_on_connection_closed
+2017-04-22 15:25:48; Calling <bound method _CallbackResult.set_value_once of <pika.adapters.blocking_connection._CallbackResult object at 0x7f3e067dee60>> for "0:_on_connection_closed"
+2017-04-22 15:25:48; Connection closed; result=BlockingConnection__OnClosedArgs(connection=<pika.adapters.select_connection.SelectConnection object at 0x7f3e08865c90>, reason_code=200, reason_text='Normal shutdown')
+2017-04-22 15:25:48; Disconnected from Rabbitmq
+2017-04-22 15:25:48; See you...
+2017-04-22 15:27:26; Connection closed
