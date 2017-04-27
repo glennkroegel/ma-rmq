@@ -41,7 +41,9 @@ from context import *
 asset = 'frxEURUSD'
 
 # Context logger
+print("Loading models...")
 bar = ContextLogger()
+balance = BalanceLogger()
 
 ################################
 
@@ -65,14 +67,15 @@ def disconnect_to_rmq():
 
 def callback(ch, method, properties, body):
 	print(" [x] Received %r" % body)
+	# Update balance
+	balance.set_balance(body)
 	# get bars
-	tick_history(ws, asset = asset, count = 80)
-	# do calc here
+	tick_history(ws, asset = asset, count = 100)
 
 
 ################################
 
-# Functions
+# Websocket events
 
 def on_open(ws):
 
@@ -89,11 +92,19 @@ def on_message(ws, message):
 		print res
 
 	if(msg_type == 'candles'):
-		bar.on_bar(res)
+		bar.on_bar(res['candles'])
 		print bar.X.tail()
 		print bar.px
-	else:
-		print res
+		trade = TradeHandler(asset, bar.X, bar.px, balance.get_balance())
+		trade.set_proportion(0.01)
+		trade.on_bar()
+		if (trade.execute == True):
+			msg = json.dumps(trade.proposal)
+			ws.send(msg)
+	if(msg_type == 'proposal'):
+		proposal = ProposalHandler(res, min_payout=0.8, max_delay=5)
+		if(proposal.execute == True):
+			print 'here'
 
 def on_close(ws):
 
@@ -119,6 +130,7 @@ def main():
 
 	# Logging
 	logging.basicConfig(filename = 'receiver.log', format = "%(asctime)s; %(message)s", datefmt = "%Y-%m-%d %H:%M:%S", level = logging.DEBUG)
+	global balance
 
 	# Message queue
 	print('Starting thread RabbitMQ')

@@ -31,8 +31,6 @@ import logging
 from sklearn.externals import joblib
 
 # CUSTOM IMPORTS
-
-#from Functions import *
 from calculations import *
 
 # Message queue
@@ -45,7 +43,12 @@ def on_open(ws):
 
 	print("Server connected")
 	logging.info("Server connected")
+
+	# Authorize stream
 	authorize(ws)
+
+	# Start stream
+	#time.sleep(1)
 	tick_stream(ws)
 
 def on_message(ws, message):
@@ -57,11 +60,19 @@ def on_message(ws, message):
 		epoch_tick = res['tick']['epoch']
 		dt_tick = dt.datetime.utcfromtimestamp(int(epoch_tick))
 		if (dt_tick.second == 0):
-			message = 'candle event'
+			message = str(balance)
 			channel.basic_publish(exchange='bars',routing_key='',body=message)
-			print(" [x] Sent candle event")
-	else:
-		print res
+			print(" [x] {0} : {1}".format(epoch_tick,balance))
+		if (dt_tick.second == 30):
+			message = json.dumps({'balance': 1})
+			ws.send(message)
+	if(msg_type == 'balance'):
+		balance = res['balance']['balance']
+	if(msg_type == 'authorize'):
+		# Get start balance
+		global balance
+		message = json.dumps({'balance': 1})
+		ws.send(message)
 
 def on_close(ws):
 
