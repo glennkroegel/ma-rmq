@@ -70,6 +70,7 @@ def callback(ch, method, properties, body):
 	# Update balance
 	balance.set_balance(body)
 	# get bars
+	time.sleep(1)
 	tick_history(ws, asset = asset, count = 100)
 
 
@@ -98,13 +99,21 @@ def on_message(ws, message):
 		trade = TradeHandler(asset, bar.X, bar.px, balance.get_balance())
 		trade.set_proportion(0.01)
 		trade.on_bar()
-		if (trade.execute == True):
+		if(trade.execute == True):
 			msg = json.dumps(trade.proposal)
 			ws.send(msg)
+	
 	if(msg_type == 'proposal'):
 		proposal = ProposalHandler(res, min_payout=0.8, max_delay=5)
 		if(proposal.execute == True):
-			print 'here'
+			msg = json.dumps(proposal.execute_request())
+			ws.send(msg)
+
+	if(msg_type == 'buy'):
+		print res
+
+	if(msg_type == 'error'):
+		print res
 
 def on_close(ws):
 

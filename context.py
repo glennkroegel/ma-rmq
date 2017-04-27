@@ -33,6 +33,12 @@ class ContextLogger(object):
 		self.scaler = joblib.load('scaler.pkl')
 		self.px = None
 
+	def on_start(self, message):
+
+		# Placeholder method in case historical data for X can only be built once on start with a one row append on_bar
+
+		pass
+
 	def on_bar(self, message):
 
 		self.input = message
@@ -104,7 +110,7 @@ class ContextLogger(object):
 
 class TradeHandler(object):
 	"""docstring for TradeHandler"""
-	def __init__(self, asset, X, px, balance):
+	def __init__(self, asset, X, px, balance, threshold_up = 0.54, threshold_down = 0.46):
 		self.asset = asset
 		self.X = X
 		self.px = px
@@ -115,8 +121,8 @@ class TradeHandler(object):
 		self.stake = 0
 		self.min_stake = 0.5
 		self.max_stake = 5000
-		self.threshold_up = 0.6
-		self.threshold_down = 0.4
+		self.threshold_up = threshold_up
+		self.threshold_down = threshold_down
 		self.payout = 0
 		self.proposal = None
 		self.execute = None
@@ -131,7 +137,6 @@ class TradeHandler(object):
 			if self.stake > self.max_stake:
 				self.set_stake(max_stake)
 
-			contract_type = 'CALL' # just for testing
 			if(self.px >= self.threshold_up):
 				contract_type = 'CALL'
 			if(self.px <= self.threshold_down):
@@ -158,14 +163,12 @@ class TradeHandler(object):
 		if (self.px>=self.threshold_up) or (self.px<=self.threshold_down):
 			return True
 		else:
-			return True # Should be false - true for testing
+			return False
 
 	def calc_expiry(self):
 
 		dt_last_bar = self.X.index[-1]
 		dt_last_bar = str(dt_last_bar)
-		print dt_last_bar
-
 
 		offset = 60
 		delta = 300 + offset
@@ -175,8 +178,8 @@ class TradeHandler(object):
 		#print t
 		t = int(t.total_seconds())
 		# print dt_last_bar
-		print t
-		print(pd.to_datetime(t, unit = 's'))
+		#print t
+		#print(pd.to_datetime(t, unit = 's'))
 
 		return t
 		
@@ -209,12 +212,16 @@ class TradeHandler(object):
 class ProposalHandler(object):
 	"""docstring for ProposalHandler"""
 	def __init__(self, response, min_payout = 0.8, max_delay = 5):
-		self.response = response
+		self.response = response['proposal']
+		print response
 		self.min_payout = min_payout
 		self.payout = self.calc_win_percentage()
 		self.max_delay = max_delay
 		self.delay = self.calc_delay()
 		self.execute = self.decide_execution()
+
+		self.trade_amount = self.response['ask_price']
+		self.id = self.response['id']
 
 	def calc_win_percentage(self):
 		win_payout = float(self.response['payout'])
@@ -239,6 +246,12 @@ class ProposalHandler(object):
 			return True
 		else:
 			return False
+
+	def execute_request(self):
+
+		message = {'buy': self.id, 'price': self.trade_amount}
+
+		return message
 		
 
 
