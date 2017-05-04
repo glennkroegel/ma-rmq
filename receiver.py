@@ -12,6 +12,8 @@ CHANGE LOG - None
 
 INFO - https://github.com/Gsantomaggio/rabbitmqexample/blob/master/webSocketPython/my-server.py
 
+to do - call last bar and append, calc probability for last X (compare results), retry limit + force request maximum to see if append helps
+
 '''
 
 import socket
@@ -70,8 +72,7 @@ def callback(ch, method, properties, body):
 	# Update balance
 	balance.set_balance(body)
 	# get bars
-	time.sleep(1)
-	tick_history(ws, asset = asset, count = 100)
+	tick_history(ws, asset = asset, count = 180)
 
 
 ################################
@@ -90,18 +91,28 @@ def on_message(ws, message):
 	msg_type = res['msg_type']
 
 	if(msg_type == 'authorize'):
-		print res
+		# on start - populate historical data
+		tick_history(ws, asset = asset, count = 150)
 
 	if(msg_type == 'candles'):
-		bar.on_bar(res['candles'])
-		print('{0},{1}'.format(bar.time, bar.px))
-		logging.info('{0},{1}'.format(bar.time, bar.px))
-		trade = TradeHandler(asset, bar.X, bar.px, balance.get_balance())
-		trade.set_proportion(0.01)
-		trade.on_bar()
-		if(trade.execute == True):
-			msg = json.dumps(trade.proposal)
-			ws.send(msg)
+		if(bar.X is not None):
+			if(bar.on_bar(res['candles'])==True):
+				print('{0},{1}'.format(bar.time, bar.px))
+				logging.info('{0},{1}'.format(bar.time, bar.px))
+				trade = TradeHandler(asset, bar.X, bar.px, balance.get_balance(), threshold_up = 0.59, threshold_down = 0.41, proportion = 0.01)
+				trade.on_bar()
+				if(trade.execute == True):
+					msg = json.dumps(trade.proposal)
+					ws.send(msg)
+			else:
+				print('retrying...')
+				logging.info('retrying...')
+				time.sleep(1)
+				tick_history(ws, asset=asset, count=180)
+		if(bar.X is None):
+			# starting
+			print('populating data..')
+			bar.on_start(res['candles'])
 	
 	if(msg_type == 'proposal'):
 		proposal = ProposalHandler(res, min_payout=0.8, max_delay=5)

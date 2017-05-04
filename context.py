@@ -10,6 +10,8 @@ Manages and processes API data
 
 CHANGE LOG - Fixed expiry time added 
 
+to do - do bar check (sleep not enough)
+
 '''
 
 import numpy as np
@@ -25,6 +27,8 @@ class ContextLogger(object):
 		self.input = None
 		self.dataframe = None
 		self.X = None
+		self.X_current = None
+		self.time = None
 		
 		self.price_info_cols = ['OPEN','HIGH','LOW','CLOSE','VOLUME']
 		self.feature_cols = None
@@ -37,22 +41,62 @@ class ContextLogger(object):
 
 		# Placeholder method in case historical data for X can only be built once on start with a one row append on_bar
 
-		pass
-
-	def on_bar(self, message):
+		# Populate historical data
 
 		self.input = message
 		
 		dataframe = self.format_input(message)
 		self.dataframe = self.calculate_features(dataframe)
 
+		# Health check here?
+
 		self.feature_cols = [col for col in self.dataframe.columns if col not in self.price_info_cols]
 		self.X = self.dataframe[self.feature_cols]
+		self.time = pd.to_datetime(self.X.index[-1], format='%Y-%m-%d %H:%M:%S')
 
-		if self.tradeable(self.X) == True:
-			self.px = self.predict(self.X)
+		print self.X.tail()
+		print self.time
+
+	def on_bar(self, message):
+
+		if self.bar_available(message):
+
+			self.input = message
+		
+			dataframe = self.format_input(message)
+			self.dataframe = self.calculate_features(dataframe)
+
+			# Health check here?
+
+			self.feature_cols = [col for col in self.dataframe.columns if col not in self.price_info_cols]
+			self.X = self.dataframe[self.feature_cols]
+			self.time = pd.to_datetime(self.X.index[-1], format='%Y-%m-%d %H:%M:%S')
+			#print self.X.tail(3)
+			#self.dataframe.to_csv('test.csv')
+
+			if self.tradeable(self.X) == True:
+				self.px = self.predict(self.X)
+			else:
+				self.px = 0.5
+
+			return True
 		else:
-			self.px = 0.5
+			return False
+
+	def bar_available(self, message, delta_expectation = 60):
+
+		# time values of last two bars
+		last_bar = self.time
+		current_bar = pd.to_datetime(message[-2]['epoch'], unit='s') # get last epoch from message
+		#print last_bar
+		#print current_bar
+
+		delta = (current_bar-last_bar).seconds
+
+		if(delta==delta_expectation):
+			return True
+		else:
+			return False
 
 	def format_input(self, message):
 
@@ -71,53 +115,77 @@ class ContextLogger(object):
 
 		df['WILLR'] = taCalcIndicator(df, 'WILLR', window = 30)
 		df['WILLR_D1'] = df['WILLR'].diff()
-		df['WILLR_D2'] = df['WILLR'].diff(2)
-		df['WILLR_D5'] = df['WILLR'].diff(5)
+		#df['WILLR_D2'] = df['WILLR'].diff(2)
+		#df['WILLR_D5'] = df['WILLR'].diff(5)
+
+		df['xWILLR20'] = calc_crossover(df['WILLR'],-20)
+		df['xWILLR80'] = calc_crossover(df['WILLR'],-80)
 
 		df['RSI'] = taCalcIndicator(df, 'RSI', window = 30)
 		df['RSI_D1'] = df['RSI'].diff()
-		df['RSI_D2'] = df['RSI'].diff(2)
-		df['RSI_D5'] = df['RSI'].diff(5)
+		#df['RSI_D2'] = df['RSI'].diff(2)
+		#df['RSI_D5'] = df['RSI'].diff(5)
 
-		df['ADX'] = taCalcIndicator(df, 'ADX', window = 14)
+		df['xRSI30'] = calc_crossover(df['RSI'],30)
+		df['xRSI70'] = calc_crossover(df['RSI'],70)
 
-		df['BP5'] = breakawayEvent(df, window =5)
+		df['CCI'] = taCalcIndicator(df, 'CCI', window = 30)
+		df['CCI_D1'] = df['CCI'].diff()
+
+		#df['BOP'] = taCalcIndicator(df, 'BOP')
+
+		#df['ADX'] = taCalcIndicator(df, 'ADX', window = 14)
+
+		#df['BP5'] = breakawayEvent(df, window =5)
 		df['BP10'] = breakawayEvent(df, window =10)
 		df['BP15'] = breakawayEvent(df, window =15)
 		df['BP30'] = breakawayEvent(df, window =30)
 		df['BP60'] = breakawayEvent(df, window =60)
 
+		df['H20'] = df['BP10'].rolling(window=20, center=False).sum()
+
+		df['dH20'] = df['H20'].diff()
+
 		return df
 
 	def predict(self, X):
 
-		X = X.dropna()
+		X = copy.deepcopy(X)
 
+		X = X.dropna()
+		#X_current = X.iloc[-1]
 		X = X.as_matrix()
 
 		if self.scaler is not None:
 			X = self.scaler.transform(X)
 
-		X_current = X[-1,:] # checkl
-		px = self.model.predict_proba(X_current)[0,1]
+		ls_px = self.model.predict_proba(X)[:,1] # wtf here
+		px = ls_px[-1]
+		#print ls_px
 
 		return px
 
 	def tradeable(self, X):
 
-		return True
+		c1 = self.X['BP10'].iloc[-1] != 0
+		c2 = (self.time.hour) >= 0
+		c3 = (self.time.hour) < 19
 
+		if(c1==True)&(c2==True)&(c3==True):
+			return True
+		else:
+			return False
 
 class TradeHandler(object):
 	"""docstring for TradeHandler"""
-	def __init__(self, asset, X, px, balance, threshold_up = 0.54, threshold_down = 0.46):
+	def __init__(self, asset, X, px, balance, threshold_up = 0.59, threshold_down = 0.41, proportion = 0.01):
 		self.asset = asset
 		self.X = X
 		self.px = px
 		self.balance = balance
 
 		self.delay = 0
-		self.proportion = 0.01
+		self.proportion = proportion
 		self.stake = 0
 		self.min_stake = 0.5
 		self.max_stake = 5000
@@ -213,7 +281,6 @@ class ProposalHandler(object):
 	"""docstring for ProposalHandler"""
 	def __init__(self, response, min_payout = 0.8, max_delay = 5):
 		self.response = response['proposal']
-		print response
 		self.min_payout = min_payout
 		self.payout = self.calc_win_percentage()
 		self.max_delay = max_delay
@@ -227,19 +294,20 @@ class ProposalHandler(object):
 		win_payout = float(self.response['payout'])
 		stake = float(self.response['ask_price'])
 		value = (win_payout-stake)/stake
-		print value
+		#print value
 		return value
 
 	def calc_delay(self):
 		date_start = float(self.response['date_start'])
 		spot_time = float(self.response['spot_time'])
-		delay = spot_time-date_start
+		delay = date_start-spot_time
+		print delay
 		return delay
 
 	def decide_execution(self):
 
 		c1 = self.payout >= self.min_payout
-		c2 = True
+		c2 = self.delay <= self.max_delay
 		c3 = True
 
 		if(c1==True)&(c2==True)&(c3==True):

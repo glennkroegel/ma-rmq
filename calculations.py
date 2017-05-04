@@ -4,7 +4,9 @@ import pandas as pd
 import numpy as np
 import datetime as dt
 import copy
+import talib
 from talib import abstract
+from talib import MA_Type
 from pykalman import KalmanFilter
 from scipy import stats
 
@@ -48,6 +50,39 @@ def taCalcIndicator(df, indicator, window = 20):
   df[indicator] = values
 
   return df[indicator]
+
+def taCalcSTOCH(df):
+
+  df = copy.deepcopy(df)
+
+  inputs = {
+      'open': df['OPEN'].values.astype(float),
+      'high': df['HIGH'].values.astype(float),
+      'low': df['LOW'].values.astype(float),
+      'close': df['CLOSE'].values.astype(float),
+      'volume': df['VOLUME'].values.astype(float)
+  }
+
+  slowk, slowd = abstract.STOCH(inputs, 5, 3, 0, 3, 0)
+  
+  df['K'] = slowk
+  df['D'] = slowd
+
+  return df['K'], df['D']
+
+def taCalcBBANDS(df):
+
+  df = copy.deepcopy(df)
+
+  close = df['CLOSE'].values.astype(float)
+  upper, middle, lower = talib.BBANDS(close, matype = MA_Type.T3)
+
+  #df['value'] = (middle-lower)/(upper-lower)
+
+  df['upper'] = upper
+  df['lower'] = lower
+
+  return df['upper'], df['lower']
 
 def pattern_gen(df, lookback = 25, prefix = 'p_'):
 
@@ -221,6 +256,17 @@ def hour_dummies(df, prefix='hour_'):
   df_dummies = pd.get_dummies(df['hour'], prefix = prefix)
 
   return df_dummies
+
+def calc_crossover(series, value):
+
+  df_crossover = series*0
+
+  df_crossover.loc[series > value] = 1
+  df_crossover.loc[series < value] = 0
+
+  df_crossover = df_crossover.diff()
+
+  return df_crossover
 
 
 

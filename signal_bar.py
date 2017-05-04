@@ -66,13 +66,15 @@ def on_message(ws, message):
 		if (dt_tick.second == 30):
 			message = json.dumps({'balance': 1})
 			ws.send(message)
-	if(msg_type == 'balance'):
+	elif(msg_type == 'balance'):
 		balance = res['balance']['balance']
-	if(msg_type == 'authorize'):
+	elif(msg_type == 'authorize'):
 		# Get start balance
 		global balance
 		message = json.dumps({'balance': 1})
 		ws.send(message)
+	else:
+		print res
 
 def on_close(ws):
 
