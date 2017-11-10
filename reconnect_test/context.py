@@ -173,6 +173,9 @@ class ContextLogger(object):
 		else:
 			return False
 
+	def restart(self):
+		self.__init__()
+
 	def set_retry_attempts(self, value):
 		self.retry_attempts = value
 

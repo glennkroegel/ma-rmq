@@ -40,7 +40,7 @@ from context import *
 
 ################################
 
-asset = 'frxUSDJPY'
+asset = 'frxEURUSD'
 
 # Context logger
 print("Loading models...")
@@ -101,17 +101,52 @@ def on_message(ws, message):
 			if(bar.on_bar(res['candles'])==True):
 				print('{0},{1}'.format(bar.time, bar.px))
 				logging.info('{0},{1}'.format(bar.time, bar.px))
+				print "a"
 				trade = TradeHandler(asset, bar.X, bar.px, balance.get_balance(), threshold_up = 0.59, threshold_down = 0.41, proportion = 0.01)
 				trade.on_bar()
 				if(trade.execute == True):
 					msg = json.dumps(trade.proposal)
 					ws.send(msg)
+				print "b"
 			else:
 				print('retrying...')
 				logging.info('retrying...')
 				print bar.retry_attempts
-				time.sleep(1)
-				tick_history(ws, asset=asset, count=180)
+				if bar.retry_attempts < 3:
+					# Retry
+					time.sleep(1)
+					tick_history(ws, asset=asset, count=180)
+				else:
+					# Reconnect
+
+					if(ws is not None):
+						ws.close()
+						ws.on_message = None
+						ws.on_close = None
+						ws.close = None
+						print("deleting websocket..")
+						del ws
+						logging.info('Websocket deleted')
+
+					ws = None
+					apiURL = "wss://ws.binaryws.com/websockets/v3?app_id=2802" # hard coded app_id
+
+					while True:
+						try:
+							ws = websocket.WebSocketApp(apiURL, on_message = on_message, on_close = on_close, on_error = on_error)
+							print 'On_Error: After Creation-1'
+							if(ws is not None):
+								print 'After Creation -  inside on_error : on_open'
+								ws.on_open = on_open
+								ws.run_forever(ping_interval=30, ping_timeout=10, sslopt={"ssl_version": ssl.PROTOCOL_TLSv1_1})
+								bar.restart()
+								print ' WS is created after the error - successfully'
+								logging.info('Websocket restarted')
+								break
+						except Exception as e:
+							print e
+							logging.info(str(e))
+
 		if(bar.X is None):
 			# starting
 			print('populating data..')
