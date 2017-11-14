@@ -66,20 +66,52 @@ def on_message(ws, message):
 		if (dt_tick.second == 30):
 			message = json.dumps({'balance': 1})
 			ws.send(message)
-	elif(msg_type == 'balance'):
+	if(msg_type == 'balance'):
 		balance = res['balance']['balance']
-	elif(msg_type == 'authorize'):
+	if(msg_type == 'authorize'):
 		# Get start balance
 		global balance
 		message = json.dumps({'balance': 1})
 		ws.send(message)
-	else:
+	if(msg_type not in ['tick','balance','authorize']):
 		print res
 
 def on_close(ws):
 
 	print("Websocket connection closed")
 	logging.info("Connection closed")
+
+def on_error(ws, error):
+
+	print error
+
+	if(ws is not None):
+		ws.close()
+		ws.on_message = None
+		ws.on_close = None
+		ws.close = None
+		print("Deleting websocket..")
+		del ws
+		logging.info('Websocket deleted')
+
+	# Reconnect
+	ws = None
+	apiURL = "wss://ws.binaryws.com/websockets/v3?app_id=2802" # hard coded app_id
+
+	while True:
+		try:
+			ws = websocket.WebSocketApp(apiURL, on_message = on_message, on_close = on_close, on_error = on_error)
+			print 'On_Error: After Creation-1'
+			if(ws is not None):
+				print 'After Creation -  inside on_error : on_open'
+				ws.on_open = on_open
+				ws.run_forever(ping_interval=30, ping_timeout=10, sslopt={"ssl_version": ssl.PROTOCOL_TLSv1_1})
+				print 'Websocket restarted'
+				logging.info('Websocket restarted')
+				break
+		except Exception as e:
+			print e
+			logging.info(str(e))
 
 def main():
 
@@ -94,10 +126,11 @@ def main():
 	print('Starting websocket..')
 
 	websocket.enableTrace(False)
+	websocket.setdefaulttimeout(10)
 	apiURL = "wss://ws.binaryws.com/websockets/v3?app_id=2802" # hard coded app_id
 	ws = websocket.WebSocketApp(apiURL, on_message = on_message, on_close = on_close)
 	ws.on_open = on_open
-	ws.run_forever(sslopt={"ssl_version": ssl.PROTOCOL_TLSv1_1})
+	ws.run_forever(ping_interval=30000, ping_timeout=10000, sslopt={"ssl_version": ssl.PROTOCOL_TLSv1_1})
 
 
 if __name__ == "__main__":

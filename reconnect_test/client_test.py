@@ -84,6 +84,8 @@ def on_open(ws):
 	print("Server connected")
 	logging.info("Server connected")
 	authorize(ws)
+	#tick_history(ws, asset = asset, count = 200)
+
 
 def on_message(ws, message):
 
@@ -96,6 +98,7 @@ def on_message(ws, message):
 		# on start - populate historical data
 		tick_history(ws, asset = asset, count = 200)
 		# start tick stream?
+		tick_stream(ws)
 
 	if(msg_type == 'tick'):
 		epoch_tick = res['tick']['epoch']
