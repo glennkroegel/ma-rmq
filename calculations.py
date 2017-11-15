@@ -214,7 +214,7 @@ def distance_metric(df, prefix = 'hamming'):
   # Returns dummies describing hamming distance of ribbon input
 
   # Read in ribbon
-  # print df.tail()
+  print df.tail()
   df = copy.deepcopy(df)
 
   # Rank ribbon (cols)
@@ -235,7 +235,7 @@ def width_metric(df, prefix = 'width'):
   # Returns dummies describing width of ribbon input
 
   # Read in ribbon
-  # print df.tail()
+  print df.tail()
   df = copy.deepcopy(df)
 
   # Rank ribbon (cols)
@@ -314,6 +314,24 @@ def A101(data):
   data['A101'] = (data['CLOSE']-data['OPEN'])/((data['HIGH']-data['LOW'])+0.001)
 
   return data['A101']
+
+def asset_state(data, lookback):
+
+  data = copy.deepcopy(data)
+  x_data = pd.DataFrame()
+
+  x_data['step_changes_1'] = data['CLOSE'].pct_change(1)
+  x_data['ranges'] = data['HIGH']-data['LOW']
+  #data['bop'] = data['CLOSE']
+
+  for i in range(1,lookback):
+    x_data['a'+str(i)] = x_data['step_changes_1'].shift(i)
+    x_data['b'+str(i)] = x_data['ranges'].shift(i)
+
+  del x_data['step_changes_1']
+  del x_data['ranges']
+
+  return x_data
 
 
 

@@ -117,7 +117,7 @@ def on_message(ws, message):
 	if(msg_type == 'balance'):
 		res_balance = res['balance']['balance']
 		balance.set_balance(res_balance)
-		print("balance: {0}".format(str(balance.get_balance())))
+		print("balance: {0}".format(str(balance.current)))
 
 	if(msg_type == 'candles'):
 		if(bar.X is not None):
