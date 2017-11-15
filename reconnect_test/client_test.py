@@ -44,8 +44,8 @@ asset = 'frxEURUSD'
 
 # Context logger
 print("Loading models...")
-bar = ContextLogger()
-balance = BalanceLogger()
+'''bar = ContextLogger()
+balance = BalanceLogger()'''
 
 ################################
 
@@ -83,6 +83,10 @@ def on_open(ws):
 
 	print("Server connected")
 	logging.info("Server connected")
+	global bar
+	global balance
+	bar = ContextLogger()
+	balance = BalanceLogger()
 	authorize(ws)
 	#tick_history(ws, asset = asset, count = 200)
 
@@ -113,20 +117,18 @@ def on_message(ws, message):
 	if(msg_type == 'balance'):
 		res_balance = res['balance']['balance']
 		balance.set_balance(res_balance)
-		print("balance: {0}".format(balance.get_balance()))
+		print("balance: {0}".format(str(balance.get_balance())))
 
 	if(msg_type == 'candles'):
 		if(bar.X is not None):
 			if(bar.on_bar(res['candles'])==True):
 				print('{0},{1}'.format(bar.time, bar.px))
 				logging.info('{0},{1}'.format(bar.time, bar.px))
-				print "a"
 				trade = TradeHandler(asset, bar.X, bar.px, balance.get_balance(), threshold_up = 0.59, threshold_down = 0.41, proportion = 0.01)
 				trade.on_bar()
 				if(trade.execute == True):
 					msg = json.dumps(trade.proposal)
 					ws.send(msg)
-				print "b"
 			else:
 				print('retrying...')
 				logging.info('retrying...')
